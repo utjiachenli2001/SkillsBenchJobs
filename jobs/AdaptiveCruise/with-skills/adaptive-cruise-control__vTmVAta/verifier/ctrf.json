@@ -1,0 +1,438 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 46,
+            "passed": 42,
+            "failed": 4,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1768584561.5305595,
+            "stop": 1768584564.076084
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::TestFilesExist::test_pid_controller_exists",
+                "status": "passed",
+                "duration": 0.0002538389999244828,
+                "start": 1768584561.5582914,
+                "stop": 1768584561.5587664,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_acc_system_exists",
+                "status": "passed",
+                "duration": 0.0001760929999363725,
+                "start": 1768584561.5589294,
+                "stop": 1768584561.5592365,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_simulation_exists",
+                "status": "passed",
+                "duration": 0.00014303400030257762,
+                "start": 1768584561.5593605,
+                "stop": 1768584561.5596244,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_tuning_results_exists",
+                "status": "passed",
+                "duration": 0.00013637600022775587,
+                "start": 1768584561.5597513,
+                "stop": 1768584561.5599983,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_simulation_results_exists",
+                "status": "passed",
+                "duration": 0.00021126599995113793,
+                "start": 1768584561.5601175,
+                "stop": 1768584561.5604346,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_acc_report_exists",
+                "status": "passed",
+                "duration": 0.00016664700024193735,
+                "start": 1768584561.560615,
+                "stop": 1768584561.5609343,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestInputFilesIntegrity::test_sensor_data_row_count",
+                "status": "passed",
+                "duration": 0.9143620830000145,
+                "start": 1768584561.5610669,
+                "stop": 1768584562.475687,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestInputFilesIntegrity::test_sensor_data_columns",
+                "status": "passed",
+                "duration": 0.0008612880005784973,
+                "start": 1768584562.475874,
+                "stop": 1768584562.476897,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestInputFilesIntegrity::test_sensor_data_time_range",
+                "status": "passed",
+                "duration": 0.0009186019997287076,
+                "start": 1768584562.477042,
+                "stop": 1768584562.4781532,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestInputFilesIntegrity::test_vehicle_params_unchanged",
+                "status": "passed",
+                "duration": 0.03632205499980046,
+                "start": 1768584562.4783196,
+                "stop": 1768584562.5148618,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPIDController::test_pid_class_exists",
+                "status": "failed",
+                "duration": 0.00030962600067141466,
+                "start": 1768584562.5150604,
+                "stop": 1768584562.5584917,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "self = <test_outputs.TestPIDController object at 0x71ce3d148d10>\n\n    @pytest.fixture\n    def pid_module(self):\n        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')\n        module = importlib.util.module_from_spec(spec)\n>       spec.loader.exec_module(module)\n\n/tests/test_outputs.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap_external>:995: in exec_module\n    ???\n<frozen importlib._bootstrap>:488: in _call_with_frames_removed\n    ???\npid_controller.py:10: in <module>\n    @dataclass\n     ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1268: in dataclass\n    return wrap(cls)\n           ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1258: in wrap\n    return _process_class(cls, init, repr, eq, order, unsafe_hash,\n/usr/lib/python3.12/dataclasses.py:983: in _process_class\n    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nannotation = 'Number', cls = <class 'pid_controller.PIDGains'>\na_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>\na_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>\nis_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>\n\n    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):\n        # Given a type annotation string, does it refer to a_type in\n        # a_module?  For example, when checking that annotation denotes a\n        # ClassVar, then a_module is typing, and a_type is\n        # typing.ClassVar.\n    \n        # It's possible to look up a_module given a_type, but it involves\n        # looking in sys.modules (again!), and seems like a waste since\n        # the caller already knows a_module.\n    \n        # - annotation is a string type annotation\n        # - cls is the class that this annotation was found in\n        # - a_module is the module we want to match\n        # - a_type is the type in that module we want to match\n        # - is_type_predicate is a function called with (obj, a_module)\n        #   that determines if obj is of the desired type.\n    \n        # Since this test does not do a local namespace lookup (and\n        # instead only a module (global) lookup), there are some things it\n        # gets wrong.\n    \n        # With string annotations, cv0 will be detected as a ClassVar:\n        #   CV = ClassVar\n        #   @dataclass\n        #   class C0:\n        #     cv0: CV\n    \n        # But in this example cv1 will not be detected as a ClassVar:\n        #   @dataclass\n        #   class C1:\n        #     CV = ClassVar\n        #     cv1: CV\n    \n        # In C1, the code in this function (_is_type) will look up \"CV\" in\n        # the module and not find it, so it will not consider cv1 as a\n        # ClassVar.  This is a fairly obscure corner case, and the best\n        # way to fix it would be to eval() the string \"CV\" with the\n        # correct global and local namespaces.  However that would involve\n        # a eval() penalty for every single field of every dataclass\n        # that's defined.  It was judged not worth it.\n    \n        match = _MODULE_IDENTIFIER_RE.match(annotation)\n        if match:\n            ns = None\n            module_name = match.group(1)\n            if not module_name:\n                # No module name, assume the class's module did\n                # \"from dataclasses import InitVar\".\n>               ns = sys.modules.get(cls.__module__).__dict__\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?\n\n/usr/lib/python3.12/dataclasses.py:749: AttributeError"
+            },
+            {
+                "name": "test_outputs.py::TestPIDController::test_pid_methods",
+                "status": "failed",
+                "duration": 0.0003662310000436264,
+                "start": 1768584562.5586917,
+                "stop": 1768584562.5775597,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "self = <test_outputs.TestPIDController object at 0x71ce3d14bf50>\n\n    @pytest.fixture\n    def pid_module(self):\n        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')\n        module = importlib.util.module_from_spec(spec)\n>       spec.loader.exec_module(module)\n\n/tests/test_outputs.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap_external>:995: in exec_module\n    ???\n<frozen importlib._bootstrap>:488: in _call_with_frames_removed\n    ???\npid_controller.py:10: in <module>\n    @dataclass\n     ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1268: in dataclass\n    return wrap(cls)\n           ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1258: in wrap\n    return _process_class(cls, init, repr, eq, order, unsafe_hash,\n/usr/lib/python3.12/dataclasses.py:983: in _process_class\n    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nannotation = 'Number', cls = <class 'pid_controller.PIDGains'>\na_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>\na_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>\nis_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>\n\n    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):\n        # Given a type annotation string, does it refer to a_type in\n        # a_module?  For example, when checking that annotation denotes a\n        # ClassVar, then a_module is typing, and a_type is\n        # typing.ClassVar.\n    \n        # It's possible to look up a_module given a_type, but it involves\n        # looking in sys.modules (again!), and seems like a waste since\n        # the caller already knows a_module.\n    \n        # - annotation is a string type annotation\n        # - cls is the class that this annotation was found in\n        # - a_module is the module we want to match\n        # - a_type is the type in that module we want to match\n        # - is_type_predicate is a function called with (obj, a_module)\n        #   that determines if obj is of the desired type.\n    \n        # Since this test does not do a local namespace lookup (and\n        # instead only a module (global) lookup), there are some things it\n        # gets wrong.\n    \n        # With string annotations, cv0 will be detected as a ClassVar:\n        #   CV = ClassVar\n        #   @dataclass\n        #   class C0:\n        #     cv0: CV\n    \n        # But in this example cv1 will not be detected as a ClassVar:\n        #   @dataclass\n        #   class C1:\n        #     CV = ClassVar\n        #     cv1: CV\n    \n        # In C1, the code in this function (_is_type) will look up \"CV\" in\n        # the module and not find it, so it will not consider cv1 as a\n        # ClassVar.  This is a fairly obscure corner case, and the best\n        # way to fix it would be to eval() the string \"CV\" with the\n        # correct global and local namespaces.  However that would involve\n        # a eval() penalty for every single field of every dataclass\n        # that's defined.  It was judged not worth it.\n    \n        match = _MODULE_IDENTIFIER_RE.match(annotation)\n        if match:\n            ns = None\n            module_name = match.group(1)\n            if not module_name:\n                # No module name, assume the class's module did\n                # \"from dataclasses import InitVar\".\n>               ns = sys.modules.get(cls.__module__).__dict__\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?\n\n/usr/lib/python3.12/dataclasses.py:749: AttributeError"
+            },
+            {
+                "name": "test_outputs.py::TestPIDController::test_pid_proportional_response",
+                "status": "failed",
+                "duration": 0.00031471999955101637,
+                "start": 1768584562.5777602,
+                "stop": 1768584562.5982,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "self = <test_outputs.TestPIDController object at 0x71ce3d149490>\n\n    @pytest.fixture\n    def pid_module(self):\n        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')\n        module = importlib.util.module_from_spec(spec)\n>       spec.loader.exec_module(module)\n\n/tests/test_outputs.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap_external>:995: in exec_module\n    ???\n<frozen importlib._bootstrap>:488: in _call_with_frames_removed\n    ???\npid_controller.py:10: in <module>\n    @dataclass\n     ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1268: in dataclass\n    return wrap(cls)\n           ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1258: in wrap\n    return _process_class(cls, init, repr, eq, order, unsafe_hash,\n/usr/lib/python3.12/dataclasses.py:983: in _process_class\n    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nannotation = 'Number', cls = <class 'pid_controller.PIDGains'>\na_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>\na_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>\nis_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>\n\n    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):\n        # Given a type annotation string, does it refer to a_type in\n        # a_module?  For example, when checking that annotation denotes a\n        # ClassVar, then a_module is typing, and a_type is\n        # typing.ClassVar.\n    \n        # It's possible to look up a_module given a_type, but it involves\n        # looking in sys.modules (again!), and seems like a waste since\n        # the caller already knows a_module.\n    \n        # - annotation is a string type annotation\n        # - cls is the class that this annotation was found in\n        # - a_module is the module we want to match\n        # - a_type is the type in that module we want to match\n        # - is_type_predicate is a function called with (obj, a_module)\n        #   that determines if obj is of the desired type.\n    \n        # Since this test does not do a local namespace lookup (and\n        # instead only a module (global) lookup), there are some things it\n        # gets wrong.\n    \n        # With string annotations, cv0 will be detected as a ClassVar:\n        #   CV = ClassVar\n        #   @dataclass\n        #   class C0:\n        #     cv0: CV\n    \n        # But in this example cv1 will not be detected as a ClassVar:\n        #   @dataclass\n        #   class C1:\n        #     CV = ClassVar\n        #     cv1: CV\n    \n        # In C1, the code in this function (_is_type) will look up \"CV\" in\n        # the module and not find it, so it will not consider cv1 as a\n        # ClassVar.  This is a fairly obscure corner case, and the best\n        # way to fix it would be to eval() the string \"CV\" with the\n        # correct global and local namespaces.  However that would involve\n        # a eval() penalty for every single field of every dataclass\n        # that's defined.  It was judged not worth it.\n    \n        match = _MODULE_IDENTIFIER_RE.match(annotation)\n        if match:\n            ns = None\n            module_name = match.group(1)\n            if not module_name:\n                # No module name, assume the class's module did\n                # \"from dataclasses import InitVar\".\n>               ns = sys.modules.get(cls.__module__).__dict__\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?\n\n/usr/lib/python3.12/dataclasses.py:749: AttributeError"
+            },
+            {
+                "name": "test_outputs.py::TestPIDController::test_pid_integral_accumulation",
+                "status": "failed",
+                "duration": 0.00033934799967028084,
+                "start": 1768584562.5984197,
+                "stop": 1768584562.6204329,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "self = <test_outputs.TestPIDController object at 0x71ce3d14ba10>\n\n    @pytest.fixture\n    def pid_module(self):\n        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')\n        module = importlib.util.module_from_spec(spec)\n>       spec.loader.exec_module(module)\n\n/tests/test_outputs.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n<frozen importlib._bootstrap_external>:995: in exec_module\n    ???\n<frozen importlib._bootstrap>:488: in _call_with_frames_removed\n    ???\npid_controller.py:10: in <module>\n    @dataclass\n     ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1268: in dataclass\n    return wrap(cls)\n           ^^^^^^^^^\n/usr/lib/python3.12/dataclasses.py:1258: in wrap\n    return _process_class(cls, init, repr, eq, order, unsafe_hash,\n/usr/lib/python3.12/dataclasses.py:983: in _process_class\n    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nannotation = 'Number', cls = <class 'pid_controller.PIDGains'>\na_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>\na_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>\nis_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>\n\n    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):\n        # Given a type annotation string, does it refer to a_type in\n        # a_module?  For example, when checking that annotation denotes a\n        # ClassVar, then a_module is typing, and a_type is\n        # typing.ClassVar.\n    \n        # It's possible to look up a_module given a_type, but it involves\n        # looking in sys.modules (again!), and seems like a waste since\n        # the caller already knows a_module.\n    \n        # - annotation is a string type annotation\n        # - cls is the class that this annotation was found in\n        # - a_module is the module we want to match\n        # - a_type is the type in that module we want to match\n        # - is_type_predicate is a function called with (obj, a_module)\n        #   that determines if obj is of the desired type.\n    \n        # Since this test does not do a local namespace lookup (and\n        # instead only a module (global) lookup), there are some things it\n        # gets wrong.\n    \n        # With string annotations, cv0 will be detected as a ClassVar:\n        #   CV = ClassVar\n        #   @dataclass\n        #   class C0:\n        #     cv0: CV\n    \n        # But in this example cv1 will not be detected as a ClassVar:\n        #   @dataclass\n        #   class C1:\n        #     CV = ClassVar\n        #     cv1: CV\n    \n        # In C1, the code in this function (_is_type) will look up \"CV\" in\n        # the module and not find it, so it will not consider cv1 as a\n        # ClassVar.  This is a fairly obscure corner case, and the best\n        # way to fix it would be to eval() the string \"CV\" with the\n        # correct global and local namespaces.  However that would involve\n        # a eval() penalty for every single field of every dataclass\n        # that's defined.  It was judged not worth it.\n    \n        match = _MODULE_IDENTIFIER_RE.match(annotation)\n        if match:\n            ns = None\n            module_name = match.group(1)\n            if not module_name:\n                # No module name, assume the class's module did\n                # \"from dataclasses import InitVar\".\n>               ns = sys.modules.get(cls.__module__).__dict__\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?\n\n/usr/lib/python3.12/dataclasses.py:749: AttributeError"
+            },
+            {
+                "name": "test_outputs.py::TestACCSystem::test_acc_class_exists",
+                "status": "passed",
+                "duration": 0.0007982199999787554,
+                "start": 1768584562.620647,
+                "stop": 1768584562.6216264,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestACCSystem::test_acc_cruise_mode",
+                "status": "passed",
+                "duration": 0.001065630000539386,
+                "start": 1768584562.6217942,
+                "stop": 1768584562.6230693,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestACCSystem::test_acc_follow_mode",
+                "status": "passed",
+                "duration": 0.0009459529997002392,
+                "start": 1768584562.6232255,
+                "stop": 1768584562.6243298,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestACCSystem::test_acc_emergency_mode",
+                "status": "passed",
+                "duration": 0.00087140800042107,
+                "start": 1768584562.6244767,
+                "stop": 1768584562.6254919,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestACCSystem::test_acc_return_format",
+                "status": "passed",
+                "duration": 0.000875563000136026,
+                "start": 1768584562.6256464,
+                "stop": 1768584562.626673,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTuningResults::test_tuning_yaml_structure",
+                "status": "passed",
+                "duration": 0.0004507740000008198,
+                "start": 1768584562.6268084,
+                "stop": 1768584562.6273885,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTuningResults::test_gains_are_tuned",
+                "status": "passed",
+                "duration": 0.0004289319999770669,
+                "start": 1768584562.627514,
+                "stop": 1768584562.6280735,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTuningResults::test_gains_in_range",
+                "status": "passed",
+                "duration": 0.00038919399958103895,
+                "start": 1768584562.6281981,
+                "stop": 1768584562.6287138,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationResults::test_csv_columns",
+                "status": "passed",
+                "duration": 0.002261603000079049,
+                "start": 1768584562.6288402,
+                "stop": 1768584562.631268,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationResults::test_row_count",
+                "status": "passed",
+                "duration": 0.0016246919999503007,
+                "start": 1768584562.6314228,
+                "stop": 1768584562.6332023,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationResults::test_timestamps_match",
+                "status": "passed",
+                "duration": 0.00221264300034818,
+                "start": 1768584562.633336,
+                "stop": 1768584562.635751,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationResults::test_acceleration_varies",
+                "status": "passed",
+                "duration": 0.0018894950003414124,
+                "start": 1768584562.636057,
+                "stop": 1768584562.6382391,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationResults::test_modes_valid",
+                "status": "passed",
+                "duration": 0.0022202159998414572,
+                "start": 1768584562.6384249,
+                "stop": 1768584562.6408455,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestReport::test_report_keywords",
+                "status": "passed",
+                "duration": 0.00019516299971655826,
+                "start": 1768584562.6410074,
+                "stop": 1768584562.6413288,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSpeedControl::test_rise_time",
+                "status": "passed",
+                "duration": 0.002541321000080643,
+                "start": 1768584562.641457,
+                "stop": 1768584562.6441827,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSpeedControl::test_overshoot",
+                "status": "passed",
+                "duration": 0.0019576839999899676,
+                "start": 1768584562.644336,
+                "stop": 1768584562.6464555,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSpeedControl::test_steady_state_error",
+                "status": "passed",
+                "duration": 0.0020355019996713963,
+                "start": 1768584562.6466134,
+                "stop": 1768584562.6488173,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestDistanceControl::test_steady_state_error",
+                "status": "passed",
+                "duration": 0.0020964670002285857,
+                "start": 1768584562.6489577,
+                "stop": 1768584562.651211,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestDistanceControl::test_distance_overshoot",
+                "status": "passed",
+                "duration": 0.0021202759999141563,
+                "start": 1768584562.6513596,
+                "stop": 1768584562.653659,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_minimum_distance",
+                "status": "passed",
+                "duration": 0.001813777000279515,
+                "start": 1768584562.653805,
+                "stop": 1768584562.6557896,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_emergency_mode_triggered",
+                "status": "passed",
+                "duration": 0.0015625589999217482,
+                "start": 1768584562.6559324,
+                "stop": 1768584562.6576378,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_emergency_ttc_and_accel",
+                "status": "passed",
+                "duration": 0.0019787199998972937,
+                "start": 1768584562.6577694,
+                "stop": 1768584562.6599178,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_acceleration_limits",
+                "status": "passed",
+                "duration": 0.001509682000232715,
+                "start": 1768584562.6600604,
+                "stop": 1768584562.6617336,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_speed_non_negative",
+                "status": "passed",
+                "duration": 0.0015851589996600524,
+                "start": 1768584562.6618726,
+                "stop": 1768584562.6636178,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestScenario::test_starts_at_rest",
+                "status": "passed",
+                "duration": 0.0015482810003959457,
+                "start": 1768584562.6637614,
+                "stop": 1768584562.6654758,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestScenario::test_cruise_mode_early",
+                "status": "passed",
+                "duration": 0.001764242999797716,
+                "start": 1768584562.6656163,
+                "stop": 1768584562.6675458,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestScenario::test_follow_mode_mid",
+                "status": "passed",
+                "duration": 0.0016232169996328594,
+                "start": 1768584562.667694,
+                "stop": 1768584562.6694598,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestScenario::test_emergency_mode_timing",
+                "status": "passed",
+                "duration": 0.001745231999848329,
+                "start": 1768584562.6695898,
+                "stop": 1768584562.671504,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestScenario::test_cruise_mode_late",
+                "status": "passed",
+                "duration": 0.0018363829999543668,
+                "start": 1768584562.671692,
+                "stop": 1768584562.6737049,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestScenario::test_all_modes_exercised",
+                "status": "passed",
+                "duration": 0.014893883999775426,
+                "start": 1768584562.6738439,
+                "stop": 1768584562.6889253,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationExecution::test_simulation_runs",
+                "status": "passed",
+                "duration": 0.4548419369994008,
+                "start": 1768584562.6890757,
+                "stop": 1768584563.1441476,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSimulationExecution::test_tuning_affects_behavior",
+                "status": "passed",
+                "duration": 0.9312988120000227,
+                "start": 1768584563.1443062,
+                "stop": 1768584564.0759552,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

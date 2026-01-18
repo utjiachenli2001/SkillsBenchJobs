@@ -1,0 +1,467 @@
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.6).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+=== Debug: Finding test files ===
+/tests/test_outputs.py
+=== Debug: Contents of /tests ===
+total 32
+drwxrwxrwx 2 1001 1001  4096 Jan 16 16:34 .
+drwxr-xr-x 1 root root  4096 Jan 16 17:29 ..
+-rwxrwxrwx 1 1001 1001  1592 Jan 12 04:36 test.sh
+-rwxrwxrwx 1 1001 1001 19321 Jan 16 16:34 test_outputs.py
+=== Debug: Contents of script directory ===
+total 32
+drwxrwxrwx 2 1001 1001  4096 Jan 16 16:34 .
+drwxr-xr-x 1 root root  4096 Jan 16 17:29 ..
+-rwxrwxrwx 1 1001 1001  1592 Jan 12 04:36 test.sh
+-rwxrwxrwx 1 1001 1001 19321 Jan 16 16:34 test_outputs.py
+=== Debug: Current working directory ===
+/root
+total 248
+drwx------ 1 root root   4096 Jan 16 17:29 .
+drwxr-xr-x 1 root root   4096 Jan 16 17:29 ..
+drwxr-xr-x 3 root root   4096 Jan 16 17:19 .agents
+-rw-r--r-- 1 root root   3329 Jan 16 17:29 .bashrc
+drwxr-xr-x 3 root root   4096 Jan 16 17:06 .cache
+drwxr-xr-x 3 root root   4096 Jan 16 17:19 .claude
+drwxr-xr-x 3 root root   4096 Jan 16 17:19 .codex
+drwxr-xr-x 4 root root   4096 Jan 16 17:29 .config
+drwxr-xr-x 3 root root   4096 Jan 16 17:29 .local
+drwxr-xr-x 4 root root   4096 Jan 16 17:20 .npm
+drwxr-xr-x 5 root root   4096 Jan 16 17:20 .nvm
+drwxr-xr-x 3 root root   4096 Jan 16 17:19 .opencode
+-rw-r--r-- 1 root root    187 Jan 16 17:29 .profile
+-rw-r--r-- 1 root root     26 Jan 16 17:29 .zshrc
+drwxr-xr-x 2 root root   4096 Jan 16 17:25 __pycache__
+-rw-r--r-- 1 root root   1469 Jan 16 17:28 acc_report.md
+-rw-r--r-- 1 root root   3713 Jan 16 17:23 acc_system.py
+-rw-r--r-- 1 root root   2563 Jan 16 17:23 pid_controller.py
+-rwxrwxrwx 1 root root  29310 Jan 12 04:44 sensor_data.csv
+-rw-r--r-- 1 root root   6762 Jan 16 17:28 simulation.py
+-rw-r--r-- 1 root root 123729 Jan 16 17:28 simulation_results.csv
+-rw-r--r-- 1 root root     87 Jan 16 17:26 tuning_results.yaml
+-rwxrwxrwx 1 root root    463 Jan 12 02:03 vehicle_params.yaml
+=== Found test file at: /tests/test_outputs.py ===
+Installed 13 packages in 50ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/zUgje60DapF4mBUbzn9Uk/bin/python
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 46 items
+
+../tests/test_outputs.py::TestFilesExist::test_pid_controller_exists PASSED [  2%]
+../tests/test_outputs.py::TestFilesExist::test_acc_system_exists PASSED  [  4%]
+../tests/test_outputs.py::TestFilesExist::test_simulation_exists PASSED  [  6%]
+../tests/test_outputs.py::TestFilesExist::test_tuning_results_exists PASSED [  8%]
+../tests/test_outputs.py::TestFilesExist::test_simulation_results_exists PASSED [ 10%]
+../tests/test_outputs.py::TestFilesExist::test_acc_report_exists PASSED  [ 13%]
+../tests/test_outputs.py::TestInputFilesIntegrity::test_sensor_data_row_count PASSED [ 15%]
+../tests/test_outputs.py::TestInputFilesIntegrity::test_sensor_data_columns PASSED [ 17%]
+../tests/test_outputs.py::TestInputFilesIntegrity::test_sensor_data_time_range PASSED [ 19%]
+../tests/test_outputs.py::TestInputFilesIntegrity::test_vehicle_params_unchanged PASSED [ 21%]
+../tests/test_outputs.py::TestPIDController::test_pid_class_exists ERROR [ 23%]
+../tests/test_outputs.py::TestPIDController::test_pid_methods ERROR      [ 26%]
+../tests/test_outputs.py::TestPIDController::test_pid_proportional_response ERROR [ 28%]
+../tests/test_outputs.py::TestPIDController::test_pid_integral_accumulation ERROR [ 30%]
+../tests/test_outputs.py::TestACCSystem::test_acc_class_exists PASSED    [ 32%]
+../tests/test_outputs.py::TestACCSystem::test_acc_cruise_mode PASSED     [ 34%]
+../tests/test_outputs.py::TestACCSystem::test_acc_follow_mode PASSED     [ 36%]
+../tests/test_outputs.py::TestACCSystem::test_acc_emergency_mode PASSED  [ 39%]
+../tests/test_outputs.py::TestACCSystem::test_acc_return_format PASSED   [ 41%]
+../tests/test_outputs.py::TestTuningResults::test_tuning_yaml_structure PASSED [ 43%]
+../tests/test_outputs.py::TestTuningResults::test_gains_are_tuned PASSED [ 45%]
+../tests/test_outputs.py::TestTuningResults::test_gains_in_range PASSED  [ 47%]
+../tests/test_outputs.py::TestSimulationResults::test_csv_columns PASSED [ 50%]
+../tests/test_outputs.py::TestSimulationResults::test_row_count PASSED   [ 52%]
+../tests/test_outputs.py::TestSimulationResults::test_timestamps_match PASSED [ 54%]
+../tests/test_outputs.py::TestSimulationResults::test_acceleration_varies PASSED [ 56%]
+../tests/test_outputs.py::TestSimulationResults::test_modes_valid PASSED [ 58%]
+../tests/test_outputs.py::TestReport::test_report_keywords PASSED        [ 60%]
+../tests/test_outputs.py::TestSpeedControl::test_rise_time PASSED        [ 63%]
+../tests/test_outputs.py::TestSpeedControl::test_overshoot PASSED        [ 65%]
+../tests/test_outputs.py::TestSpeedControl::test_steady_state_error PASSED [ 67%]
+../tests/test_outputs.py::TestDistanceControl::test_steady_state_error PASSED [ 69%]
+../tests/test_outputs.py::TestDistanceControl::test_distance_overshoot PASSED [ 71%]
+../tests/test_outputs.py::TestSafety::test_minimum_distance PASSED       [ 73%]
+../tests/test_outputs.py::TestSafety::test_emergency_mode_triggered PASSED [ 76%]
+../tests/test_outputs.py::TestSafety::test_emergency_ttc_and_accel PASSED [ 78%]
+../tests/test_outputs.py::TestSafety::test_acceleration_limits PASSED    [ 80%]
+../tests/test_outputs.py::TestSafety::test_speed_non_negative PASSED     [ 82%]
+../tests/test_outputs.py::TestScenario::test_starts_at_rest PASSED       [ 84%]
+../tests/test_outputs.py::TestScenario::test_cruise_mode_early PASSED    [ 86%]
+../tests/test_outputs.py::TestScenario::test_follow_mode_mid PASSED      [ 89%]
+../tests/test_outputs.py::TestScenario::test_emergency_mode_timing PASSED [ 91%]
+../tests/test_outputs.py::TestScenario::test_cruise_mode_late PASSED     [ 93%]
+../tests/test_outputs.py::TestScenario::test_all_modes_exercised PASSED  [ 95%]
+../tests/test_outputs.py::TestSimulationExecution::test_simulation_runs PASSED [ 97%]
+../tests/test_outputs.py::TestSimulationExecution::test_tuning_affects_behavior PASSED [100%]
+
+==================================== ERRORS ====================================
+__________ ERROR at setup of TestPIDController.test_pid_class_exists ___________
+
+self = <test_outputs.TestPIDController object at 0x71ce3d148d10>
+
+    @pytest.fixture
+    def pid_module(self):
+        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')
+        module = importlib.util.module_from_spec(spec)
+>       spec.loader.exec_module(module)
+
+/tests/test_outputs.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+pid_controller.py:10: in <module>
+    @dataclass
+     ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1268: in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1258: in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+/usr/lib/python3.12/dataclasses.py:983: in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+annotation = 'Number', cls = <class 'pid_controller.PIDGains'>
+a_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>
+a_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>
+is_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>
+
+    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):
+        # Given a type annotation string, does it refer to a_type in
+        # a_module?  For example, when checking that annotation denotes a
+        # ClassVar, then a_module is typing, and a_type is
+        # typing.ClassVar.
+    
+        # It's possible to look up a_module given a_type, but it involves
+        # looking in sys.modules (again!), and seems like a waste since
+        # the caller already knows a_module.
+    
+        # - annotation is a string type annotation
+        # - cls is the class that this annotation was found in
+        # - a_module is the module we want to match
+        # - a_type is the type in that module we want to match
+        # - is_type_predicate is a function called with (obj, a_module)
+        #   that determines if obj is of the desired type.
+    
+        # Since this test does not do a local namespace lookup (and
+        # instead only a module (global) lookup), there are some things it
+        # gets wrong.
+    
+        # With string annotations, cv0 will be detected as a ClassVar:
+        #   CV = ClassVar
+        #   @dataclass
+        #   class C0:
+        #     cv0: CV
+    
+        # But in this example cv1 will not be detected as a ClassVar:
+        #   @dataclass
+        #   class C1:
+        #     CV = ClassVar
+        #     cv1: CV
+    
+        # In C1, the code in this function (_is_type) will look up "CV" in
+        # the module and not find it, so it will not consider cv1 as a
+        # ClassVar.  This is a fairly obscure corner case, and the best
+        # way to fix it would be to eval() the string "CV" with the
+        # correct global and local namespaces.  However that would involve
+        # a eval() penalty for every single field of every dataclass
+        # that's defined.  It was judged not worth it.
+    
+        match = _MODULE_IDENTIFIER_RE.match(annotation)
+        if match:
+            ns = None
+            module_name = match.group(1)
+            if not module_name:
+                # No module name, assume the class's module did
+                # "from dataclasses import InitVar".
+>               ns = sys.modules.get(cls.__module__).__dict__
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+
+/usr/lib/python3.12/dataclasses.py:749: AttributeError
+_____________ ERROR at setup of TestPIDController.test_pid_methods _____________
+
+self = <test_outputs.TestPIDController object at 0x71ce3d14bf50>
+
+    @pytest.fixture
+    def pid_module(self):
+        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')
+        module = importlib.util.module_from_spec(spec)
+>       spec.loader.exec_module(module)
+
+/tests/test_outputs.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+pid_controller.py:10: in <module>
+    @dataclass
+     ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1268: in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1258: in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+/usr/lib/python3.12/dataclasses.py:983: in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+annotation = 'Number', cls = <class 'pid_controller.PIDGains'>
+a_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>
+a_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>
+is_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>
+
+    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):
+        # Given a type annotation string, does it refer to a_type in
+        # a_module?  For example, when checking that annotation denotes a
+        # ClassVar, then a_module is typing, and a_type is
+        # typing.ClassVar.
+    
+        # It's possible to look up a_module given a_type, but it involves
+        # looking in sys.modules (again!), and seems like a waste since
+        # the caller already knows a_module.
+    
+        # - annotation is a string type annotation
+        # - cls is the class that this annotation was found in
+        # - a_module is the module we want to match
+        # - a_type is the type in that module we want to match
+        # - is_type_predicate is a function called with (obj, a_module)
+        #   that determines if obj is of the desired type.
+    
+        # Since this test does not do a local namespace lookup (and
+        # instead only a module (global) lookup), there are some things it
+        # gets wrong.
+    
+        # With string annotations, cv0 will be detected as a ClassVar:
+        #   CV = ClassVar
+        #   @dataclass
+        #   class C0:
+        #     cv0: CV
+    
+        # But in this example cv1 will not be detected as a ClassVar:
+        #   @dataclass
+        #   class C1:
+        #     CV = ClassVar
+        #     cv1: CV
+    
+        # In C1, the code in this function (_is_type) will look up "CV" in
+        # the module and not find it, so it will not consider cv1 as a
+        # ClassVar.  This is a fairly obscure corner case, and the best
+        # way to fix it would be to eval() the string "CV" with the
+        # correct global and local namespaces.  However that would involve
+        # a eval() penalty for every single field of every dataclass
+        # that's defined.  It was judged not worth it.
+    
+        match = _MODULE_IDENTIFIER_RE.match(annotation)
+        if match:
+            ns = None
+            module_name = match.group(1)
+            if not module_name:
+                # No module name, assume the class's module did
+                # "from dataclasses import InitVar".
+>               ns = sys.modules.get(cls.__module__).__dict__
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+
+/usr/lib/python3.12/dataclasses.py:749: AttributeError
+______ ERROR at setup of TestPIDController.test_pid_proportional_response ______
+
+self = <test_outputs.TestPIDController object at 0x71ce3d149490>
+
+    @pytest.fixture
+    def pid_module(self):
+        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')
+        module = importlib.util.module_from_spec(spec)
+>       spec.loader.exec_module(module)
+
+/tests/test_outputs.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+pid_controller.py:10: in <module>
+    @dataclass
+     ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1268: in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1258: in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+/usr/lib/python3.12/dataclasses.py:983: in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+annotation = 'Number', cls = <class 'pid_controller.PIDGains'>
+a_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>
+a_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>
+is_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>
+
+    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):
+        # Given a type annotation string, does it refer to a_type in
+        # a_module?  For example, when checking that annotation denotes a
+        # ClassVar, then a_module is typing, and a_type is
+        # typing.ClassVar.
+    
+        # It's possible to look up a_module given a_type, but it involves
+        # looking in sys.modules (again!), and seems like a waste since
+        # the caller already knows a_module.
+    
+        # - annotation is a string type annotation
+        # - cls is the class that this annotation was found in
+        # - a_module is the module we want to match
+        # - a_type is the type in that module we want to match
+        # - is_type_predicate is a function called with (obj, a_module)
+        #   that determines if obj is of the desired type.
+    
+        # Since this test does not do a local namespace lookup (and
+        # instead only a module (global) lookup), there are some things it
+        # gets wrong.
+    
+        # With string annotations, cv0 will be detected as a ClassVar:
+        #   CV = ClassVar
+        #   @dataclass
+        #   class C0:
+        #     cv0: CV
+    
+        # But in this example cv1 will not be detected as a ClassVar:
+        #   @dataclass
+        #   class C1:
+        #     CV = ClassVar
+        #     cv1: CV
+    
+        # In C1, the code in this function (_is_type) will look up "CV" in
+        # the module and not find it, so it will not consider cv1 as a
+        # ClassVar.  This is a fairly obscure corner case, and the best
+        # way to fix it would be to eval() the string "CV" with the
+        # correct global and local namespaces.  However that would involve
+        # a eval() penalty for every single field of every dataclass
+        # that's defined.  It was judged not worth it.
+    
+        match = _MODULE_IDENTIFIER_RE.match(annotation)
+        if match:
+            ns = None
+            module_name = match.group(1)
+            if not module_name:
+                # No module name, assume the class's module did
+                # "from dataclasses import InitVar".
+>               ns = sys.modules.get(cls.__module__).__dict__
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+
+/usr/lib/python3.12/dataclasses.py:749: AttributeError
+______ ERROR at setup of TestPIDController.test_pid_integral_accumulation ______
+
+self = <test_outputs.TestPIDController object at 0x71ce3d14ba10>
+
+    @pytest.fixture
+    def pid_module(self):
+        spec = importlib.util.spec_from_file_location('pid_controller', '/root/pid_controller.py')
+        module = importlib.util.module_from_spec(spec)
+>       spec.loader.exec_module(module)
+
+/tests/test_outputs.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen importlib._bootstrap_external>:995: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+pid_controller.py:10: in <module>
+    @dataclass
+     ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1268: in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+/usr/lib/python3.12/dataclasses.py:1258: in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+/usr/lib/python3.12/dataclasses.py:983: in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+annotation = 'Number', cls = <class 'pid_controller.PIDGains'>
+a_module = <module 'dataclasses' from '/usr/lib/python3.12/dataclasses.py'>
+a_type = <dataclasses._KW_ONLY_TYPE object at 0x71ce3d919ee0>
+is_type_predicate = <function _is_kw_only at 0x71ce3d90e2a0>
+
+    def _is_type(annotation, cls, a_module, a_type, is_type_predicate):
+        # Given a type annotation string, does it refer to a_type in
+        # a_module?  For example, when checking that annotation denotes a
+        # ClassVar, then a_module is typing, and a_type is
+        # typing.ClassVar.
+    
+        # It's possible to look up a_module given a_type, but it involves
+        # looking in sys.modules (again!), and seems like a waste since
+        # the caller already knows a_module.
+    
+        # - annotation is a string type annotation
+        # - cls is the class that this annotation was found in
+        # - a_module is the module we want to match
+        # - a_type is the type in that module we want to match
+        # - is_type_predicate is a function called with (obj, a_module)
+        #   that determines if obj is of the desired type.
+    
+        # Since this test does not do a local namespace lookup (and
+        # instead only a module (global) lookup), there are some things it
+        # gets wrong.
+    
+        # With string annotations, cv0 will be detected as a ClassVar:
+        #   CV = ClassVar
+        #   @dataclass
+        #   class C0:
+        #     cv0: CV
+    
+        # But in this example cv1 will not be detected as a ClassVar:
+        #   @dataclass
+        #   class C1:
+        #     CV = ClassVar
+        #     cv1: CV
+    
+        # In C1, the code in this function (_is_type) will look up "CV" in
+        # the module and not find it, so it will not consider cv1 as a
+        # ClassVar.  This is a fairly obscure corner case, and the best
+        # way to fix it would be to eval() the string "CV" with the
+        # correct global and local namespaces.  However that would involve
+        # a eval() penalty for every single field of every dataclass
+        # that's defined.  It was judged not worth it.
+    
+        match = _MODULE_IDENTIFIER_RE.match(annotation)
+        if match:
+            ns = None
+            module_name = match.group(1)
+            if not module_name:
+                # No module name, assume the class's module did
+                # "from dataclasses import InitVar".
+>               ns = sys.modules.get(cls.__module__).__dict__
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
+
+/usr/lib/python3.12/dataclasses.py:749: AttributeError
+=========================== short test summary info ============================
+ERROR ../tests/test_outputs.py::TestPIDController::test_pid_class_exists - At...
+ERROR ../tests/test_outputs.py::TestPIDController::test_pid_methods - Attribu...
+ERROR ../tests/test_outputs.py::TestPIDController::test_pid_proportional_response
+ERROR ../tests/test_outputs.py::TestPIDController::test_pid_integral_accumulation
+========================= 42 passed, 4 errors in 2.56s =========================

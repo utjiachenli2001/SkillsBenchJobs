@@ -1,0 +1,11 @@
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+2026-01-16T18:06:59.573233Z ERROR codex_core::codex: failed to load skill /root/.codex/skills/vehicle-dynamics/SKILL.md: missing YAML frontmatter delimited by ---
+2026-01-16T18:06:59.573291Z ERROR codex_core::codex: failed to load skill /root/.codex/skills/simulation-metrics/SKILL.md: missing YAML frontmatter delimited by ---
+2026-01-16T18:06:59.573297Z ERROR codex_core::codex: failed to load skill /root/.codex/skills/csv-processing/SKILL.md: missing YAML frontmatter delimited by ---
+2026-01-16T18:06:59.573301Z ERROR codex_core::codex: failed to load skill /root/.codex/skills/yaml-config/SKILL.md: missing YAML frontmatter delimited by ---
+2026-01-16T18:06:59.573304Z ERROR codex_core::codex: failed to load skill /root/.codex/skills/pid-controller/SKILL.md: missing YAML frontmatter delimited by ---
+{"type":"thread.started","thread_id":"019bc7fd-37f6-7222-8ddf-541a69d3a2b2"}
+{"type":"turn.started"}
+{"type":"error","message":"Quota exceeded. Check your plan and billing details."}
+{"type":"turn.failed","error":{"message":"Quota exceeded. Check your plan and billing details."}}

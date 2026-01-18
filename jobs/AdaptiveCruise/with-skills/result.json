@@ -1,0 +1,29 @@
+{
+    "id": "557def41-0cdb-42f2-8835-bcc8c13137c0",
+    "started_at": "2026-01-16T11:19:47.639399",
+    "finished_at": "2026-01-16T11:29:25.906173",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "codex__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "adaptive-cruise-control__vTmVAta"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}
