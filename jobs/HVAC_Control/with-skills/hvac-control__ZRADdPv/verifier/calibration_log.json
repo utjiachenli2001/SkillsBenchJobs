@@ -1,0 +1,1211 @@
+{
+  "phase": "calibration",
+  "heater_power_test": 50.0,
+  "data": [
+    {
+      "time": 0.0,
+      "temperature": 18.1185,
+      "heater_power": 0.0
+    },
+    {
+      "time": 0.5,
+      "temperature": 18.0329,
+      "heater_power": 50.0
+    },
+    {
+      "time": 1.0,
+      "temperature": 18.3493,
+      "heater_power": 50.0
+    },
+    {
+      "time": 1.5,
+      "temperature": 18.2477,
+      "heater_power": 50.0
+    },
+    {
+      "time": 2.0,
+      "temperature": 18.1595,
+      "heater_power": 50.0
+    },
+    {
+      "time": 2.5,
+      "temperature": 18.3957,
+      "heater_power": 50.0
+    },
+    {
+      "time": 3.0,
+      "temperature": 18.4014,
+      "heater_power": 50.0
+    },
+    {
+      "time": 3.5,
+      "temperature": 18.3595,
+      "heater_power": 50.0
+    },
+    {
+      "time": 4.0,
+      "temperature": 18.685,
+      "heater_power": 50.0
+    },
+    {
+      "time": 4.5,
+      "temperature": 18.6365,
+      "heater_power": 50.0
+    },
+    {
+      "time": 5.0,
+      "temperature": 18.7244,
+      "heater_power": 50.0
+    },
+    {
+      "time": 5.5,
+      "temperature": 18.7401,
+      "heater_power": 50.0
+    },
+    {
+      "time": 6.0,
+      "temperature": 18.8526,
+      "heater_power": 50.0
+    },
+    {
+      "time": 6.5,
+      "temperature": 18.8753,
+      "heater_power": 50.0
+    },
+    {
+      "time": 7.0,
+      "temperature": 18.9133,
+      "heater_power": 50.0
+    },
+    {
+      "time": 7.5,
+      "temperature": 19.1537,
+      "heater_power": 50.0
+    },
+    {
+      "time": 8.0,
+      "temperature": 19.1801,
+      "heater_power": 50.0
+    },
+    {
+      "time": 8.5,
+      "temperature": 18.9858,
+      "heater_power": 50.0
+    },
+    {
+      "time": 9.0,
+      "temperature": 19.2819,
+      "heater_power": 50.0
+    },
+    {
+      "time": 9.5,
+      "temperature": 19.2707,
+      "heater_power": 50.0
+    },
+    {
+      "time": 10.0,
+      "temperature": 19.3459,
+      "heater_power": 50.0
+    },
+    {
+      "time": 10.5,
+      "temperature": 19.4855,
+      "heater_power": 50.0
+    },
+    {
+      "time": 11.0,
+      "temperature": 19.58,
+      "heater_power": 50.0
+    },
+    {
+      "time": 11.5,
+      "temperature": 19.5783,
+      "heater_power": 50.0
+    },
+    {
+      "time": 12.0,
+      "temperature": 19.791,
+      "heater_power": 50.0
+    },
+    {
+      "time": 12.5,
+      "temperature": 19.8068,
+      "heater_power": 50.0
+    },
+    {
+      "time": 13.0,
+      "temperature": 19.64,
+      "heater_power": 50.0
+    },
+    {
+      "time": 13.5,
+      "temperature": 19.794,
+      "heater_power": 50.0
+    },
+    {
+      "time": 14.0,
+      "temperature": 19.8653,
+      "heater_power": 50.0
+    },
+    {
+      "time": 14.5,
+      "temperature": 19.8107,
+      "heater_power": 50.0
+    },
+    {
+      "time": 15.0,
+      "temperature": 19.7499,
+      "heater_power": 50.0
+    },
+    {
+      "time": 15.5,
+      "temperature": 19.8858,
+      "heater_power": 50.0
+    },
+    {
+      "time": 16.0,
+      "temperature": 19.8269,
+      "heater_power": 50.0
+    },
+    {
+      "time": 16.5,
+      "temperature": 20.0433,
+      "heater_power": 50.0
+    },
+    {
+      "time": 17.0,
+      "temperature": 19.97,
+      "heater_power": 50.0
+    },
+    {
+      "time": 17.5,
+      "temperature": 20.0658,
+      "heater_power": 50.0
+    },
+    {
+      "time": 18.0,
+      "temperature": 20.177,
+      "heater_power": 50.0
+    },
+    {
+      "time": 18.5,
+      "temperature": 20.2275,
+      "heater_power": 50.0
+    },
+    {
+      "time": 19.0,
+      "temperature": 20.3192,
+      "heater_power": 50.0
+    },
+    {
+      "time": 19.5,
+      "temperature": 20.2024,
+      "heater_power": 50.0
+    },
+    {
+      "time": 20.0,
+      "temperature": 20.3608,
+      "heater_power": 50.0
+    },
+    {
+      "time": 20.5,
+      "temperature": 20.5096,
+      "heater_power": 50.0
+    },
+    {
+      "time": 21.0,
+      "temperature": 20.6453,
+      "heater_power": 50.0
+    },
+    {
+      "time": 21.5,
+      "temperature": 20.5382,
+      "heater_power": 50.0
+    },
+    {
+      "time": 22.0,
+      "temperature": 20.4962,
+      "heater_power": 50.0
+    },
+    {
+      "time": 22.5,
+      "temperature": 20.7522,
+      "heater_power": 50.0
+    },
+    {
+      "time": 23.0,
+      "temperature": 20.6098,
+      "heater_power": 50.0
+    },
+    {
+      "time": 23.5,
+      "temperature": 20.8668,
+      "heater_power": 50.0
+    },
+    {
+      "time": 24.0,
+      "temperature": 21.047,
+      "heater_power": 50.0
+    },
+    {
+      "time": 24.5,
+      "temperature": 20.6026,
+      "heater_power": 50.0
+    },
+    {
+      "time": 25.0,
+      "temperature": 20.7803,
+      "heater_power": 50.0
+    },
+    {
+      "time": 25.5,
+      "temperature": 20.7288,
+      "heater_power": 50.0
+    },
+    {
+      "time": 26.0,
+      "temperature": 20.8302,
+      "heater_power": 50.0
+    },
+    {
+      "time": 26.5,
+      "temperature": 20.9475,
+      "heater_power": 50.0
+    },
+    {
+      "time": 27.0,
+      "temperature": 20.9998,
+      "heater_power": 50.0
+    },
+    {
+      "time": 27.5,
+      "temperature": 20.8802,
+      "heater_power": 50.0
+    },
+    {
+      "time": 28.0,
+      "temperature": 21.1296,
+      "heater_power": 50.0
+    },
+    {
+      "time": 28.5,
+      "temperature": 21.1308,
+      "heater_power": 50.0
+    },
+    {
+      "time": 29.0,
+      "temperature": 21.2804,
+      "heater_power": 50.0
+    },
+    {
+      "time": 29.5,
+      "temperature": 21.1421,
+      "heater_power": 50.0
+    },
+    {
+      "time": 30.0,
+      "temperature": 21.2381,
+      "heater_power": 50.0
+    },
+    {
+      "time": 30.5,
+      "temperature": 21.2828,
+      "heater_power": 50.0
+    },
+    {
+      "time": 31.0,
+      "temperature": 21.3703,
+      "heater_power": 50.0
+    },
+    {
+      "time": 31.5,
+      "temperature": 21.288,
+      "heater_power": 50.0
+    },
+    {
+      "time": 32.0,
+      "temperature": 21.1557,
+      "heater_power": 50.0
+    },
+    {
+      "time": 32.5,
+      "temperature": 21.5753,
+      "heater_power": 50.0
+    },
+    {
+      "time": 33.0,
+      "temperature": 21.2708,
+      "heater_power": 50.0
+    },
+    {
+      "time": 33.5,
+      "temperature": 21.304,
+      "heater_power": 50.0
+    },
+    {
+      "time": 34.0,
+      "temperature": 21.4749,
+      "heater_power": 50.0
+    },
+    {
+      "time": 34.5,
+      "temperature": 21.5498,
+      "heater_power": 50.0
+    },
+    {
+      "time": 35.0,
+      "temperature": 21.5932,
+      "heater_power": 50.0
+    },
+    {
+      "time": 35.5,
+      "temperature": 21.5736,
+      "heater_power": 50.0
+    },
+    {
+      "time": 36.0,
+      "temperature": 21.5798,
+      "heater_power": 50.0
+    },
+    {
+      "time": 36.5,
+      "temperature": 21.5091,
+      "heater_power": 50.0
+    },
+    {
+      "time": 37.0,
+      "temperature": 21.4948,
+      "heater_power": 50.0
+    },
+    {
+      "time": 37.5,
+      "temperature": 21.7196,
+      "heater_power": 50.0
+    },
+    {
+      "time": 38.0,
+      "temperature": 21.5732,
+      "heater_power": 50.0
+    },
+    {
+      "time": 38.5,
+      "temperature": 21.5552,
+      "heater_power": 50.0
+    },
+    {
+      "time": 39.0,
+      "temperature": 21.7797,
+      "heater_power": 50.0
+    },
+    {
+      "time": 39.5,
+      "temperature": 21.8055,
+      "heater_power": 50.0
+    },
+    {
+      "time": 40.0,
+      "temperature": 21.7948,
+      "heater_power": 50.0
+    },
+    {
+      "time": 40.5,
+      "temperature": 21.9471,
+      "heater_power": 50.0
+    },
+    {
+      "time": 41.0,
+      "temperature": 21.8731,
+      "heater_power": 50.0
+    },
+    {
+      "time": 41.5,
+      "temperature": 21.9603,
+      "heater_power": 50.0
+    },
+    {
+      "time": 42.0,
+      "temperature": 21.9687,
+      "heater_power": 50.0
+    },
+    {
+      "time": 42.5,
+      "temperature": 21.9069,
+      "heater_power": 50.0
+    },
+    {
+      "time": 43.0,
+      "temperature": 21.9093,
+      "heater_power": 50.0
+    },
+    {
+      "time": 43.5,
+      "temperature": 21.916,
+      "heater_power": 50.0
+    },
+    {
+      "time": 44.0,
+      "temperature": 22.1886,
+      "heater_power": 50.0
+    },
+    {
+      "time": 44.5,
+      "temperature": 21.9816,
+      "heater_power": 50.0
+    },
+    {
+      "time": 45.0,
+      "temperature": 22.1621,
+      "heater_power": 50.0
+    },
+    {
+      "time": 45.5,
+      "temperature": 22.0963,
+      "heater_power": 50.0
+    },
+    {
+      "time": 46.0,
+      "temperature": 22.1618,
+      "heater_power": 50.0
+    },
+    {
+      "time": 46.5,
+      "temperature": 22.004,
+      "heater_power": 50.0
+    },
+    {
+      "time": 47.0,
+      "temperature": 22.2116,
+      "heater_power": 50.0
+    },
+    {
+      "time": 47.5,
+      "temperature": 22.0962,
+      "heater_power": 50.0
+    },
+    {
+      "time": 48.0,
+      "temperature": 22.005,
+      "heater_power": 50.0
+    },
+    {
+      "time": 48.5,
+      "temperature": 22.4527,
+      "heater_power": 50.0
+    },
+    {
+      "time": 49.0,
+      "temperature": 22.3649,
+      "heater_power": 50.0
+    },
+    {
+      "time": 49.5,
+      "temperature": 22.3272,
+      "heater_power": 50.0
+    },
+    {
+      "time": 50.0,
+      "temperature": 22.3462,
+      "heater_power": 50.0
+    },
+    {
+      "time": 50.5,
+      "temperature": 22.2601,
+      "heater_power": 50.0
+    },
+    {
+      "time": 51.0,
+      "temperature": 22.3951,
+      "heater_power": 50.0
+    },
+    {
+      "time": 51.5,
+      "temperature": 22.2326,
+      "heater_power": 50.0
+    },
+    {
+      "time": 52.0,
+      "temperature": 22.4336,
+      "heater_power": 50.0
+    },
+    {
+      "time": 52.5,
+      "temperature": 22.6056,
+      "heater_power": 50.0
+    },
+    {
+      "time": 53.0,
+      "temperature": 22.4139,
+      "heater_power": 50.0
+    },
+    {
+      "time": 53.5,
+      "temperature": 22.4894,
+      "heater_power": 50.0
+    },
+    {
+      "time": 54.0,
+      "temperature": 22.4076,
+      "heater_power": 50.0
+    },
+    {
+      "time": 54.5,
+      "temperature": 22.46,
+      "heater_power": 50.0
+    },
+    {
+      "time": 55.0,
+      "temperature": 22.3594,
+      "heater_power": 50.0
+    },
+    {
+      "time": 55.5,
+      "temperature": 22.3679,
+      "heater_power": 50.0
+    },
+    {
+      "time": 56.0,
+      "temperature": 22.4854,
+      "heater_power": 50.0
+    },
+    {
+      "time": 56.5,
+      "temperature": 22.4918,
+      "heater_power": 50.0
+    },
+    {
+      "time": 57.0,
+      "temperature": 22.5228,
+      "heater_power": 50.0
+    },
+    {
+      "time": 57.5,
+      "temperature": 22.5458,
+      "heater_power": 50.0
+    },
+    {
+      "time": 58.0,
+      "temperature": 22.4796,
+      "heater_power": 50.0
+    },
+    {
+      "time": 58.5,
+      "temperature": 22.5297,
+      "heater_power": 50.0
+    },
+    {
+      "time": 59.0,
+      "temperature": 22.6842,
+      "heater_power": 50.0
+    },
+    {
+      "time": 59.5,
+      "temperature": 22.6678,
+      "heater_power": 50.0
+    },
+    {
+      "time": 60.0,
+      "temperature": 22.6525,
+      "heater_power": 50.0
+    },
+    {
+      "time": 60.5,
+      "temperature": 22.5645,
+      "heater_power": 50.0
+    },
+    {
+      "time": 61.0,
+      "temperature": 22.7627,
+      "heater_power": 50.0
+    },
+    {
+      "time": 61.5,
+      "temperature": 22.7129,
+      "heater_power": 50.0
+    },
+    {
+      "time": 62.0,
+      "temperature": 22.6997,
+      "heater_power": 50.0
+    },
+    {
+      "time": 62.5,
+      "temperature": 22.6908,
+      "heater_power": 50.0
+    },
+    {
+      "time": 63.0,
+      "temperature": 22.8164,
+      "heater_power": 50.0
+    },
+    {
+      "time": 63.5,
+      "temperature": 22.9062,
+      "heater_power": 50.0
+    },
+    {
+      "time": 64.0,
+      "temperature": 22.787,
+      "heater_power": 50.0
+    },
+    {
+      "time": 64.5,
+      "temperature": 22.7388,
+      "heater_power": 50.0
+    },
+    {
+      "time": 65.0,
+      "temperature": 22.8265,
+      "heater_power": 50.0
+    },
+    {
+      "time": 65.5,
+      "temperature": 22.8682,
+      "heater_power": 50.0
+    },
+    {
+      "time": 66.0,
+      "temperature": 22.7528,
+      "heater_power": 50.0
+    },
+    {
+      "time": 66.5,
+      "temperature": 22.6691,
+      "heater_power": 50.0
+    },
+    {
+      "time": 67.0,
+      "temperature": 22.7992,
+      "heater_power": 50.0
+    },
+    {
+      "time": 67.5,
+      "temperature": 23.0484,
+      "heater_power": 50.0
+    },
+    {
+      "time": 68.0,
+      "temperature": 22.8674,
+      "heater_power": 50.0
+    },
+    {
+      "time": 68.5,
+      "temperature": 22.7244,
+      "heater_power": 50.0
+    },
+    {
+      "time": 69.0,
+      "temperature": 22.8455,
+      "heater_power": 50.0
+    },
+    {
+      "time": 69.5,
+      "temperature": 22.7825,
+      "heater_power": 50.0
+    },
+    {
+      "time": 70.0,
+      "temperature": 23.1101,
+      "heater_power": 50.0
+    },
+    {
+      "time": 70.5,
+      "temperature": 22.9512,
+      "heater_power": 50.0
+    },
+    {
+      "time": 71.0,
+      "temperature": 23.1027,
+      "heater_power": 50.0
+    },
+    {
+      "time": 71.5,
+      "temperature": 23.0205,
+      "heater_power": 50.0
+    },
+    {
+      "time": 72.0,
+      "temperature": 23.0709,
+      "heater_power": 50.0
+    },
+    {
+      "time": 72.5,
+      "temperature": 23.0359,
+      "heater_power": 50.0
+    },
+    {
+      "time": 73.0,
+      "temperature": 23.1168,
+      "heater_power": 50.0
+    },
+    {
+      "time": 73.5,
+      "temperature": 23.0485,
+      "heater_power": 50.0
+    },
+    {
+      "time": 74.0,
+      "temperature": 22.9881,
+      "heater_power": 50.0
+    },
+    {
+      "time": 74.5,
+      "temperature": 22.9868,
+      "heater_power": 50.0
+    },
+    {
+      "time": 75.0,
+      "temperature": 22.9807,
+      "heater_power": 50.0
+    },
+    {
+      "time": 75.5,
+      "temperature": 23.0813,
+      "heater_power": 50.0
+    },
+    {
+      "time": 76.0,
+      "temperature": 22.9577,
+      "heater_power": 50.0
+    },
+    {
+      "time": 76.5,
+      "temperature": 23.1068,
+      "heater_power": 50.0
+    },
+    {
+      "time": 77.0,
+      "temperature": 23.1486,
+      "heater_power": 50.0
+    },
+    {
+      "time": 77.5,
+      "temperature": 23.1125,
+      "heater_power": 50.0
+    },
+    {
+      "time": 78.0,
+      "temperature": 23.1919,
+      "heater_power": 50.0
+    },
+    {
+      "time": 78.5,
+      "temperature": 23.2452,
+      "heater_power": 50.0
+    },
+    {
+      "time": 79.0,
+      "temperature": 23.0945,
+      "heater_power": 50.0
+    },
+    {
+      "time": 79.5,
+      "temperature": 23.2851,
+      "heater_power": 50.0
+    },
+    {
+      "time": 80.0,
+      "temperature": 23.2752,
+      "heater_power": 50.0
+    },
+    {
+      "time": 80.5,
+      "temperature": 23.2675,
+      "heater_power": 50.0
+    },
+    {
+      "time": 81.0,
+      "temperature": 23.268,
+      "heater_power": 50.0
+    },
+    {
+      "time": 81.5,
+      "temperature": 23.2777,
+      "heater_power": 50.0
+    },
+    {
+      "time": 82.0,
+      "temperature": 23.2516,
+      "heater_power": 50.0
+    },
+    {
+      "time": 82.5,
+      "temperature": 23.2728,
+      "heater_power": 50.0
+    },
+    {
+      "time": 83.0,
+      "temperature": 23.1474,
+      "heater_power": 50.0
+    },
+    {
+      "time": 83.5,
+      "temperature": 23.321,
+      "heater_power": 50.0
+    },
+    {
+      "time": 84.0,
+      "temperature": 23.3317,
+      "heater_power": 50.0
+    },
+    {
+      "time": 84.5,
+      "temperature": 23.3166,
+      "heater_power": 50.0
+    },
+    {
+      "time": 85.0,
+      "temperature": 23.514,
+      "heater_power": 50.0
+    },
+    {
+      "time": 85.5,
+      "temperature": 23.2977,
+      "heater_power": 50.0
+    },
+    {
+      "time": 86.0,
+      "temperature": 23.2667,
+      "heater_power": 50.0
+    },
+    {
+      "time": 86.5,
+      "temperature": 23.3925,
+      "heater_power": 50.0
+    },
+    {
+      "time": 87.0,
+      "temperature": 23.3775,
+      "heater_power": 50.0
+    },
+    {
+      "time": 87.5,
+      "temperature": 23.3085,
+      "heater_power": 50.0
+    },
+    {
+      "time": 88.0,
+      "temperature": 23.3374,
+      "heater_power": 50.0
+    },
+    {
+      "time": 88.5,
+      "temperature": 23.4374,
+      "heater_power": 50.0
+    },
+    {
+      "time": 89.0,
+      "temperature": 23.4029,
+      "heater_power": 50.0
+    },
+    {
+      "time": 89.5,
+      "temperature": 23.2168,
+      "heater_power": 50.0
+    },
+    {
+      "time": 90.0,
+      "temperature": 23.2865,
+      "heater_power": 50.0
+    },
+    {
+      "time": 90.5,
+      "temperature": 23.3644,
+      "heater_power": 50.0
+    },
+    {
+      "time": 91.0,
+      "temperature": 23.2642,
+      "heater_power": 50.0
+    },
+    {
+      "time": 91.5,
+      "temperature": 23.4776,
+      "heater_power": 50.0
+    },
+    {
+      "time": 92.0,
+      "temperature": 23.1987,
+      "heater_power": 50.0
+    },
+    {
+      "time": 92.5,
+      "temperature": 23.4756,
+      "heater_power": 50.0
+    },
+    {
+      "time": 93.0,
+      "temperature": 23.4897,
+      "heater_power": 50.0
+    },
+    {
+      "time": 93.5,
+      "temperature": 23.3388,
+      "heater_power": 50.0
+    },
+    {
+      "time": 94.0,
+      "temperature": 23.3737,
+      "heater_power": 50.0
+    },
+    {
+      "time": 94.5,
+      "temperature": 23.3298,
+      "heater_power": 50.0
+    },
+    {
+      "time": 95.0,
+      "temperature": 23.5868,
+      "heater_power": 50.0
+    },
+    {
+      "time": 95.5,
+      "temperature": 23.2558,
+      "heater_power": 50.0
+    },
+    {
+      "time": 96.0,
+      "temperature": 23.5139,
+      "heater_power": 50.0
+    },
+    {
+      "time": 96.5,
+      "temperature": 23.4141,
+      "heater_power": 50.0
+    },
+    {
+      "time": 97.0,
+      "temperature": 23.5538,
+      "heater_power": 50.0
+    },
+    {
+      "time": 97.5,
+      "temperature": 23.4858,
+      "heater_power": 50.0
+    },
+    {
+      "time": 98.0,
+      "temperature": 23.3958,
+      "heater_power": 50.0
+    },
+    {
+      "time": 98.5,
+      "temperature": 23.6026,
+      "heater_power": 50.0
+    },
+    {
+      "time": 99.0,
+      "temperature": 23.5816,
+      "heater_power": 50.0
+    },
+    {
+      "time": 99.5,
+      "temperature": 23.5472,
+      "heater_power": 50.0
+    },
+    {
+      "time": 100.0,
+      "temperature": 23.4148,
+      "heater_power": 50.0
+    },
+    {
+      "time": 100.5,
+      "temperature": 23.5466,
+      "heater_power": 50.0
+    },
+    {
+      "time": 101.0,
+      "temperature": 23.4269,
+      "heater_power": 50.0
+    },
+    {
+      "time": 101.5,
+      "temperature": 23.5651,
+      "heater_power": 50.0
+    },
+    {
+      "time": 102.0,
+      "temperature": 23.5936,
+      "heater_power": 50.0
+    },
+    {
+      "time": 102.5,
+      "temperature": 23.5024,
+      "heater_power": 50.0
+    },
+    {
+      "time": 103.0,
+      "temperature": 23.5573,
+      "heater_power": 50.0
+    },
+    {
+      "time": 103.5,
+      "temperature": 23.4096,
+      "heater_power": 50.0
+    },
+    {
+      "time": 104.0,
+      "temperature": 23.4336,
+      "heater_power": 50.0
+    },
+    {
+      "time": 104.5,
+      "temperature": 23.6302,
+      "heater_power": 50.0
+    },
+    {
+      "time": 105.0,
+      "temperature": 23.7008,
+      "heater_power": 50.0
+    },
+    {
+      "time": 105.5,
+      "temperature": 23.6195,
+      "heater_power": 50.0
+    },
+    {
+      "time": 106.0,
+      "temperature": 23.6247,
+      "heater_power": 50.0
+    },
+    {
+      "time": 106.5,
+      "temperature": 23.4008,
+      "heater_power": 50.0
+    },
+    {
+      "time": 107.0,
+      "temperature": 23.4848,
+      "heater_power": 50.0
+    },
+    {
+      "time": 107.5,
+      "temperature": 23.6744,
+      "heater_power": 50.0
+    },
+    {
+      "time": 108.0,
+      "temperature": 23.5702,
+      "heater_power": 50.0
+    },
+    {
+      "time": 108.5,
+      "temperature": 23.7544,
+      "heater_power": 50.0
+    },
+    {
+      "time": 109.0,
+      "temperature": 23.6444,
+      "heater_power": 50.0
+    },
+    {
+      "time": 109.5,
+      "temperature": 23.5455,
+      "heater_power": 50.0
+    },
+    {
+      "time": 110.0,
+      "temperature": 23.5695,
+      "heater_power": 50.0
+    },
+    {
+      "time": 110.5,
+      "temperature": 23.5746,
+      "heater_power": 50.0
+    },
+    {
+      "time": 111.0,
+      "temperature": 23.6194,
+      "heater_power": 50.0
+    },
+    {
+      "time": 111.5,
+      "temperature": 23.8407,
+      "heater_power": 50.0
+    },
+    {
+      "time": 112.0,
+      "temperature": 23.7666,
+      "heater_power": 50.0
+    },
+    {
+      "time": 112.5,
+      "temperature": 23.5082,
+      "heater_power": 50.0
+    },
+    {
+      "time": 113.0,
+      "temperature": 23.6504,
+      "heater_power": 50.0
+    },
+    {
+      "time": 113.5,
+      "temperature": 23.9034,
+      "heater_power": 50.0
+    },
+    {
+      "time": 114.0,
+      "temperature": 23.5925,
+      "heater_power": 50.0
+    },
+    {
+      "time": 114.5,
+      "temperature": 23.6858,
+      "heater_power": 50.0
+    },
+    {
+      "time": 115.0,
+      "temperature": 23.6275,
+      "heater_power": 50.0
+    },
+    {
+      "time": 115.5,
+      "temperature": 23.6805,
+      "heater_power": 50.0
+    },
+    {
+      "time": 116.0,
+      "temperature": 23.7699,
+      "heater_power": 50.0
+    },
+    {
+      "time": 116.5,
+      "temperature": 23.745,
+      "heater_power": 50.0
+    },
+    {
+      "time": 117.0,
+      "temperature": 23.449,
+      "heater_power": 50.0
+    },
+    {
+      "time": 117.5,
+      "temperature": 23.6173,
+      "heater_power": 50.0
+    },
+    {
+      "time": 118.0,
+      "temperature": 23.3849,
+      "heater_power": 50.0
+    },
+    {
+      "time": 118.5,
+      "temperature": 23.9134,
+      "heater_power": 50.0
+    },
+    {
+      "time": 119.0,
+      "temperature": 23.8242,
+      "heater_power": 50.0
+    },
+    {
+      "time": 119.5,
+      "temperature": 23.6908,
+      "heater_power": 50.0
+    },
+    {
+      "time": 120.0,
+      "temperature": 23.7052,
+      "heater_power": 50.0
+    }
+  ]
+}

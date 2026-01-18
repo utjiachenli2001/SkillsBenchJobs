@@ -1,0 +1,29 @@
+{
+    "id": "4ec81364-3278-40bf-a4a0-fce23f20a1d0",
+    "started_at": "2026-01-18T14:13:34.491380",
+    "finished_at": "2026-01-18T14:21:32.456496",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "codex__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "hvac-control__cHdQFeC"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,380 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 40,
+            "passed": 40,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1768769498.9971924,
+            "stop": 1768769499.2015107
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::TestFilesExist::test_calibration_log_exists",
+                "status": "passed",
+                "duration": 0.00024616500104457373,
+                "start": 1768769499.1799383,
+                "stop": 1768769499.1803982,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_estimated_params_exists",
+                "status": "passed",
+                "duration": 0.00018358099987381138,
+                "start": 1768769499.180546,
+                "stop": 1768769499.180937,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_tuned_gains_exists",
+                "status": "passed",
+                "duration": 0.00016018299993447727,
+                "start": 1768769499.1810815,
+                "stop": 1768769499.1813645,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_control_log_exists",
+                "status": "passed",
+                "duration": 0.0001424669999323669,
+                "start": 1768769499.1815028,
+                "stop": 1768769499.1817634,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_metrics_exists",
+                "status": "passed",
+                "duration": 0.00014648800060967915,
+                "start": 1768769499.181886,
+                "stop": 1768769499.1821506,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_has_phase_field",
+                "status": "passed",
+                "duration": 0.0004593520006892504,
+                "start": 1768769499.1822736,
+                "stop": 1768769499.1829484,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_has_heater_power_test",
+                "status": "passed",
+                "duration": 0.0002747669996097102,
+                "start": 1768769499.183101,
+                "stop": 1768769499.1835127,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_has_data_array",
+                "status": "passed",
+                "duration": 0.0002424870008326252,
+                "start": 1768769499.1836452,
+                "stop": 1768769499.1840253,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_data_entries_have_required_fields",
+                "status": "passed",
+                "duration": 0.0003368379993844428,
+                "start": 1768769499.1841571,
+                "stop": 1768769499.1847005,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_at_least_20_data_points",
+                "status": "passed",
+                "duration": 0.0003136670011372189,
+                "start": 1768769499.1848493,
+                "stop": 1768769499.185313,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_at_least_30_seconds",
+                "status": "passed",
+                "duration": 0.0002533369997763657,
+                "start": 1768769499.1854951,
+                "stop": 1768769499.1858726,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_timestamps_monotonic",
+                "status": "passed",
+                "duration": 0.0002491089990144246,
+                "start": 1768769499.185999,
+                "stop": 1768769499.186386,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_starts_near_ambient",
+                "status": "passed",
+                "duration": 0.0002499329993952415,
+                "start": 1768769499.186515,
+                "stop": 1768769499.1868813,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_data_uses_declared_power",
+                "status": "passed",
+                "duration": 0.0002490420001777238,
+                "start": 1768769499.1869993,
+                "stop": 1768769499.1873906,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_has_required_fields",
+                "status": "passed",
+                "duration": 0.00016054100069595734,
+                "start": 1768769499.187517,
+                "stop": 1768769499.1877897,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_k_within_tolerance",
+                "status": "passed",
+                "duration": 0.0001626700004635495,
+                "start": 1768769499.187904,
+                "stop": 1768769499.1881745,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_tau_within_tolerance",
+                "status": "passed",
+                "duration": 0.00018057600027532317,
+                "start": 1768769499.1882951,
+                "stop": 1768769499.18861,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_r_squared_above_threshold",
+                "status": "passed",
+                "duration": 0.0001477129990234971,
+                "start": 1768769499.1887271,
+                "stop": 1768769499.188984,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_no_nan_values",
+                "status": "passed",
+                "duration": 0.00018105799972545356,
+                "start": 1768769499.189094,
+                "stop": 1768769499.1893976,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_has_required_fields",
+                "status": "passed",
+                "duration": 0.00016110799970192602,
+                "start": 1768769499.1895535,
+                "stop": 1768769499.1898277,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_kp_in_range",
+                "status": "passed",
+                "duration": 0.00013575200046034297,
+                "start": 1768769499.1899416,
+                "stop": 1768769499.190175,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_ki_in_range",
+                "status": "passed",
+                "duration": 0.0001504359988757642,
+                "start": 1768769499.1902966,
+                "stop": 1768769499.1905649,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_kd_non_negative",
+                "status": "passed",
+                "duration": 0.00014249400101107312,
+                "start": 1768769499.1906984,
+                "stop": 1768769499.1909456,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_lambda_positive",
+                "status": "passed",
+                "duration": 0.00013354099974094424,
+                "start": 1768769499.1910467,
+                "stop": 1768769499.1912773,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_has_phase_field",
+                "status": "passed",
+                "duration": 0.00041542599956301274,
+                "start": 1768769499.1913867,
+                "stop": 1768769499.1919155,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_has_setpoint_field",
+                "status": "passed",
+                "duration": 0.0003429869993851753,
+                "start": 1768769499.1920297,
+                "stop": 1768769499.1924806,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_has_data_array",
+                "status": "passed",
+                "duration": 0.00031341300018539187,
+                "start": 1768769499.192591,
+                "stop": 1768769499.1930041,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_data_entries_have_required_fields",
+                "status": "passed",
+                "duration": 0.0003879349997077952,
+                "start": 1768769499.1931274,
+                "stop": 1768769499.1936371,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_at_least_150_seconds",
+                "status": "passed",
+                "duration": 0.000371232999896165,
+                "start": 1768769499.193755,
+                "stop": 1768769499.194258,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_timestamps_monotonic",
+                "status": "passed",
+                "duration": 0.0003764420007428271,
+                "start": 1768769499.1943893,
+                "stop": 1768769499.1948843,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_has_required_fields",
+                "status": "passed",
+                "duration": 0.0002451880000080564,
+                "start": 1768769499.1950557,
+                "stop": 1768769499.195453,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_max_temp_matches_control_log",
+                "status": "passed",
+                "duration": 0.00041007699928741204,
+                "start": 1768769499.1955853,
+                "stop": 1768769499.1961155,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_overshoot_matches_control_log",
+                "status": "passed",
+                "duration": 0.0005084219992568251,
+                "start": 1768769499.1962352,
+                "stop": 1768769499.19691,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_steady_state_error_matches_control_log",
+                "status": "passed",
+                "duration": 0.0005326789996615844,
+                "start": 1768769499.1970503,
+                "stop": 1768769499.197718,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_steady_state_error",
+                "status": "passed",
+                "duration": 0.0003991469993707142,
+                "start": 1768769499.1978405,
+                "stop": 1768769499.1983867,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_settling_time",
+                "status": "passed",
+                "duration": 0.0003708949998326716,
+                "start": 1768769499.1985142,
+                "stop": 1768769499.198995,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_overshoot",
+                "status": "passed",
+                "duration": 0.00042839999969146447,
+                "start": 1768769499.199145,
+                "stop": 1768769499.199699,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_temperature_below_30",
+                "status": "passed",
+                "duration": 0.00038945899905229453,
+                "start": 1768769499.1998296,
+                "stop": 1768769499.200333,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_calibration_temp_below_30",
+                "status": "passed",
+                "duration": 0.00023293899903364945,
+                "start": 1768769499.2004461,
+                "stop": 1768769499.2007987,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_control_temp_below_30",
+                "status": "passed",
+                "duration": 0.0003871969993269886,
+                "start": 1768769499.200922,
+                "stop": 1768769499.2014446,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

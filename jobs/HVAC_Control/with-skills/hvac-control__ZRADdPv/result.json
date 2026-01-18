@@ -1,0 +1,87 @@
+{
+    "id": "3103aa2c-4972-4aca-b398-3da10350b69b",
+    "task_name": "hvac-control",
+    "trial_name": "hvac-control__ZRADdPv",
+    "trial_uri": "file:///mnt/f/HVAC_Control/jobs/2026-01-18__14-41-53/hvac-control__ZRADdPv",
+    "task_id": {
+        "path": "tasks/hvac-control"
+    },
+    "source": null,
+    "task_checksum": "9d1fe4db5fc88dd9a98bbffd59744aa580bdab988222e9771d9a04e2c4857edb",
+    "config": {
+        "task": {
+            "path": "tasks/hvac-control",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "hvac-control__ZRADdPv",
+        "trials_dir": "jobs/2026-01-18__14-41-53",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "gpt-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5ef6b7bd-6e4f-4f86-9517-1d34f80d3393"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 959175,
+        "n_cache_tokens": 892416,
+        "n_output_tokens": 29404,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-18T14:41:54.148136",
+    "finished_at": "2026-01-18T14:51:41.129608",
+    "environment_setup": {
+        "started_at": "2026-01-18T14:41:54.512014",
+        "finished_at": "2026-01-18T14:41:58.188762"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-18T14:41:58.188785",
+        "finished_at": "2026-01-18T14:42:20.793553"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-18T14:42:20.793588",
+        "finished_at": "2026-01-18T14:51:36.801371"
+    },
+    "verifier": {
+        "started_at": "2026-01-18T14:51:36.801481",
+        "finished_at": "2026-01-18T14:51:39.311031"
+    }
+}

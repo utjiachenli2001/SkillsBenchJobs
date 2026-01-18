@@ -1,0 +1,404 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 42,
+            "passed": 40,
+            "failed": 2,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1768767690.374937,
+            "stop": 1768767690.622577
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::TestFilesExist::test_calibration_log_exists",
+                "status": "passed",
+                "duration": 0.0002716709996093414,
+                "start": 1768767690.5862472,
+                "stop": 1768767690.5867343,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_estimated_params_exists",
+                "status": "passed",
+                "duration": 0.0001688170004854328,
+                "start": 1768767690.5868967,
+                "stop": 1768767690.5871994,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_tuned_gains_exists",
+                "status": "passed",
+                "duration": 0.00013231600041763159,
+                "start": 1768767690.5873208,
+                "stop": 1768767690.587559,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_control_log_exists",
+                "status": "passed",
+                "duration": 0.00012714699823845876,
+                "start": 1768767690.5876706,
+                "stop": 1768767690.5879,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestFilesExist::test_metrics_exists",
+                "status": "passed",
+                "duration": 0.0001490340009695501,
+                "start": 1768767690.5880125,
+                "stop": 1768767690.5883021,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_has_phase_field",
+                "status": "passed",
+                "duration": 0.00036245899991627084,
+                "start": 1768767690.5884347,
+                "stop": 1768767690.5889456,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_has_heater_power_test",
+                "status": "passed",
+                "duration": 0.00028443100109143415,
+                "start": 1768767690.5890956,
+                "stop": 1768767690.5895154,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_has_data_array",
+                "status": "passed",
+                "duration": 0.0002613500000734348,
+                "start": 1768767690.5896418,
+                "stop": 1768767690.590017,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_data_entries_have_required_fields",
+                "status": "passed",
+                "duration": 0.0002943580002465751,
+                "start": 1768767690.5901575,
+                "stop": 1768767690.5905848,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_at_least_20_data_points",
+                "status": "passed",
+                "duration": 0.0002563840007496765,
+                "start": 1768767690.590712,
+                "stop": 1768767690.5910883,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_at_least_30_seconds",
+                "status": "passed",
+                "duration": 0.0002471430007062736,
+                "start": 1768767690.5912147,
+                "stop": 1768767690.5915825,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_timestamps_monotonic",
+                "status": "passed",
+                "duration": 0.0002788319998217048,
+                "start": 1768767690.5916972,
+                "stop": 1768767690.5921144,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_starts_near_ambient",
+                "status": "passed",
+                "duration": 0.00024137100081134122,
+                "start": 1768767690.592254,
+                "stop": 1768767690.5926156,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestCalibrationLog::test_data_uses_declared_power",
+                "status": "passed",
+                "duration": 0.00023352800053544343,
+                "start": 1768767690.5927305,
+                "stop": 1768767690.593069,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_has_required_fields",
+                "status": "passed",
+                "duration": 0.00016164499993465142,
+                "start": 1768767690.5931811,
+                "stop": 1768767690.593452,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_k_within_tolerance",
+                "status": "passed",
+                "duration": 0.00020543899972835789,
+                "start": 1768767690.593576,
+                "stop": 1768767690.5939386,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_tau_within_tolerance",
+                "status": "passed",
+                "duration": 0.00020451699947443558,
+                "start": 1768767690.59407,
+                "stop": 1768767690.5944645,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_r_squared_above_threshold",
+                "status": "passed",
+                "duration": 0.00017127799947047606,
+                "start": 1768767690.5945895,
+                "stop": 1768767690.594888,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestEstimatedParams::test_no_nan_values",
+                "status": "passed",
+                "duration": 0.00018565099981060484,
+                "start": 1768767690.595018,
+                "stop": 1768767690.595316,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_has_required_fields",
+                "status": "passed",
+                "duration": 0.00016339200010406785,
+                "start": 1768767690.595434,
+                "stop": 1768767690.595724,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_kp_in_range",
+                "status": "passed",
+                "duration": 0.00021343299886211753,
+                "start": 1768767690.5959373,
+                "stop": 1768767690.5962877,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_ki_in_range",
+                "status": "passed",
+                "duration": 0.00015940599951136392,
+                "start": 1768767690.5964172,
+                "stop": 1768767690.5966904,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_kd_non_negative",
+                "status": "passed",
+                "duration": 0.00016525400042155525,
+                "start": 1768767690.596812,
+                "stop": 1768767690.597089,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestTunedGains::test_lambda_positive",
+                "status": "passed",
+                "duration": 0.00017153299904748565,
+                "start": 1768767690.597211,
+                "stop": 1768767690.597507,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_has_phase_field",
+                "status": "passed",
+                "duration": 0.00044199500098329736,
+                "start": 1768767690.5976288,
+                "stop": 1768767690.5981994,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_has_setpoint_field",
+                "status": "passed",
+                "duration": 0.000402108999878692,
+                "start": 1768767690.5983322,
+                "stop": 1768767690.5988834,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_has_data_array",
+                "status": "passed",
+                "duration": 0.00038138899890327593,
+                "start": 1768767690.5990121,
+                "stop": 1768767690.599525,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_data_entries_have_required_fields",
+                "status": "passed",
+                "duration": 0.0003590700007407577,
+                "start": 1768767690.5996506,
+                "stop": 1768767690.6001499,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_first_timestamp_positive",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0004486539992285543,
+                "start": 1768767690.6002796,
+                "stop": 1768767690.6102362,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "self = <test_outputs.TestControlLog object at 0x7a9fe098d670>\n\n    def test_first_timestamp_positive(self):\n        \"\"\"Check first control timestamp is > 0 per instruction.\"\"\"\n        data = load_json(CONTROL_LOG)\n        first_time = data[\"data\"][0][\"time\"]\n>       assert first_time > 0, f\"first timestamp should be > 0, got {first_time}\"\nE       AssertionError: first timestamp should be > 0, got 0.0\nE       assert 0.0 > 0\n\n/tests/test_outputs.py:270: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_starts_after_calibration",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0005886339995413437,
+                "start": 1768767690.6103923,
+                "stop": 1768767690.614334,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "self = <test_outputs.TestControlLog object at 0x7a9fe098d190>\n\n    def test_starts_after_calibration(self):\n        \"\"\"Check control starts after calibration ends per instruction.\"\"\"\n        cal_data = load_json(CALIBRATION_LOG)\n        ctrl_data = load_json(CONTROL_LOG)\n        cal_end = cal_data[\"data\"][-1][\"time\"]\n        ctrl_start = ctrl_data[\"data\"][0][\"time\"]\n>       assert ctrl_start >= cal_end, f\"control start ({ctrl_start}) should be >= calibration end ({cal_end})\"\nE       AssertionError: control start (0.0) should be >= calibration end (130.0)\nE       assert 0.0 >= 130.0\n\n/tests/test_outputs.py:278: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_at_least_150_seconds",
+                "status": "passed",
+                "duration": 0.0004389630003061029,
+                "start": 1768767690.6144996,
+                "stop": 1768767690.6151083,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestControlLog::test_timestamps_monotonic",
+                "status": "passed",
+                "duration": 0.0004503659993133624,
+                "start": 1768767690.6152465,
+                "stop": 1768767690.6158257,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_has_required_fields",
+                "status": "passed",
+                "duration": 0.00018074199942930136,
+                "start": 1768767690.6159575,
+                "stop": 1768767690.6162703,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_max_temp_matches_control_log",
+                "status": "passed",
+                "duration": 0.0004030879999845638,
+                "start": 1768767690.6164007,
+                "stop": 1768767690.6169317,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_overshoot_matches_control_log",
+                "status": "passed",
+                "duration": 0.00053591200048686,
+                "start": 1768767690.6170733,
+                "stop": 1768767690.6177518,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestMetrics::test_steady_state_error_matches_control_log",
+                "status": "passed",
+                "duration": 0.0004506939985731151,
+                "start": 1768767690.6178916,
+                "stop": 1768767690.618468,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_steady_state_error",
+                "status": "passed",
+                "duration": 0.0004469740006243228,
+                "start": 1768767690.6185977,
+                "stop": 1768767690.6191819,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_settling_time",
+                "status": "passed",
+                "duration": 0.0004334459999881801,
+                "start": 1768767690.619338,
+                "stop": 1768767690.6198971,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_overshoot",
+                "status": "passed",
+                "duration": 0.0004239149993736646,
+                "start": 1768767690.620042,
+                "stop": 1768767690.6206074,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestPerformance::test_temperature_below_30",
+                "status": "passed",
+                "duration": 0.00045800499992765253,
+                "start": 1768767690.6207442,
+                "stop": 1768767690.6213393,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_calibration_temp_below_30",
+                "status": "passed",
+                "duration": 0.0002606919997560908,
+                "start": 1768767690.621473,
+                "stop": 1768767690.6218536,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::TestSafety::test_control_temp_below_30",
+                "status": "passed",
+                "duration": 0.00039409300006809644,
+                "start": 1768767690.621984,
+                "stop": 1768767690.6225164,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

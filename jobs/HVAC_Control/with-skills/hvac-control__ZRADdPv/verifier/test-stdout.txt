@@ -1,0 +1,150 @@
+Collecting pytest==8.4.1
+  Downloading pytest-8.4.1-py3-none-any.whl.metadata (7.7 kB)
+Collecting pytest-json-ctrf==0.3.5
+  Downloading pytest_json_ctrf-0.3.5-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: numpy==1.26.4 in /usr/local/lib/python3.12/dist-packages (1.26.4)
+Collecting iniconfig>=1 (from pytest==8.4.1)
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=20 (from pytest==8.4.1)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pluggy<2,>=1.5 (from pytest==8.4.1)
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest==8.4.1)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Downloading pytest-8.4.1-py3-none-any.whl (365 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 365.5/365.5 kB 7.6 MB/s eta 0:00:00
+Downloading pytest_json_ctrf-0.3.5-py3-none-any.whl (6.8 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.5/66.5 kB 4.4 MB/s eta 0:00:00
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 17.5 MB/s eta 0:00:00
+Installing collected packages: pygments, pluggy, packaging, iniconfig, pytest, pytest-json-ctrf
+Successfully installed iniconfig-2.3.0 packaging-25.0 pluggy-1.6.0 pygments-2.19.2 pytest-8.4.1 pytest-json-ctrf-0.3.5
+=== Contents of /tests ===
+total 36
+drwxrwxrwx 3 1001 1001  4096 Jan 18 20:40 .
+drwxr-xr-x 1 root root  4096 Jan 18 20:51 ..
+drwxrwxrwx 2 1001 1001  4096 Jan 12 05:38 __pycache__
+-rwxrwxrwx 1 1001 1001  1036 Jan 12 05:53 test.sh
+-rwxrwxrwx 1 1001 1001 15871 Jan 18 20:41 test_outputs.py
+-rwxrwxrwx 1 1001 1001    58 Jan 12 02:15 verification_params.json
+=== Contents of /root ===
+total 180
+drwx------ 1 root root  4096 Jan 18 20:47 .
+drwxr-xr-x 1 root root  4096 Jan 18 20:51 ..
+drwxr-xr-x 3 root root  4096 Jan 18 19:42 .agents
+-rw-r--r-- 1 root root  3303 Jan 18 20:42 .bashrc
+drwxr-xr-x 1 root root  4096 Jan 18 19:42 .cache
+drwxr-xr-x 3 root root  4096 Jan 18 19:42 .claude
+drwxr-xr-x 3 root root  4096 Jan 18 19:42 .codex
+drwxr-xr-x 3 root root  4096 Jan 18 19:42 .factory
+drwxr-xr-x 3 root root  4096 Jan 18 19:42 .goose
+drwxr-xr-x 4 root root  4096 Jan 18 20:42 .npm
+drwxr-xr-x 5 root root  4096 Jan 18 20:42 .nvm
+drwxr-xr-x 3 root root  4096 Jan 18 19:42 .opencode
+-rw-r--r-- 1 root root   161 Apr 22  2024 .profile
+drwxr-xr-x 2 root root  4096 Jan 18 20:48 __pycache__
+-rw-r--r-- 1 root root 21760 Jan 18 20:50 calibration_log.json
+-rw-r--r-- 1 root root 55432 Jan 18 20:50 control_log.json
+-rw-r--r-- 1 root root    94 Jan 18 20:50 estimated_params.json
+-rwxrwxrwx 1 root root  5930 Jan 12 02:52 hvac_simulator.py
+-rw-r--r-- 1 root root   131 Jan 18 20:50 metrics.json
+-rwxrwxrwx 1 root root   130 Jan 12 02:15 room_config.json
+-rw-r--r-- 1 root root 10134 Jan 18 20:50 temperature_controller.py
+-rw-r--r-- 1 root root    76 Jan 18 20:50 tuned_gains.json
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 40 items
+
+../tests/test_outputs.py::TestFilesExist::test_calibration_log_exists PASSED [  2%]
+../tests/test_outputs.py::TestFilesExist::test_estimated_params_exists PASSED [  5%]
+../tests/test_outputs.py::TestFilesExist::test_tuned_gains_exists PASSED [  7%]
+../tests/test_outputs.py::TestFilesExist::test_control_log_exists PASSED [ 10%]
+../tests/test_outputs.py::TestFilesExist::test_metrics_exists PASSED     [ 12%]
+../tests/test_outputs.py::TestCalibrationLog::test_has_phase_field PASSED [ 15%]
+../tests/test_outputs.py::TestCalibrationLog::test_has_heater_power_test PASSED [ 17%]
+../tests/test_outputs.py::TestCalibrationLog::test_has_data_array PASSED [ 20%]
+../tests/test_outputs.py::TestCalibrationLog::test_data_entries_have_required_fields PASSED [ 22%]
+../tests/test_outputs.py::TestCalibrationLog::test_at_least_20_data_points PASSED [ 25%]
+../tests/test_outputs.py::TestCalibrationLog::test_at_least_30_seconds PASSED [ 27%]
+../tests/test_outputs.py::TestCalibrationLog::test_timestamps_monotonic PASSED [ 30%]
+../tests/test_outputs.py::TestCalibrationLog::test_starts_near_ambient PASSED [ 32%]
+../tests/test_outputs.py::TestCalibrationLog::test_data_uses_declared_power PASSED [ 35%]
+../tests/test_outputs.py::TestEstimatedParams::test_has_required_fields PASSED [ 37%]
+../tests/test_outputs.py::TestEstimatedParams::test_k_within_tolerance PASSED [ 40%]
+../tests/test_outputs.py::TestEstimatedParams::test_tau_within_tolerance PASSED [ 42%]
+../tests/test_outputs.py::TestEstimatedParams::test_r_squared_above_threshold PASSED [ 45%]
+../tests/test_outputs.py::TestEstimatedParams::test_no_nan_values PASSED [ 47%]
+../tests/test_outputs.py::TestTunedGains::test_has_required_fields PASSED [ 50%]
+../tests/test_outputs.py::TestTunedGains::test_kp_in_range PASSED        [ 52%]
+../tests/test_outputs.py::TestTunedGains::test_ki_in_range PASSED        [ 55%]
+../tests/test_outputs.py::TestTunedGains::test_kd_non_negative PASSED    [ 57%]
+../tests/test_outputs.py::TestTunedGains::test_lambda_positive PASSED    [ 60%]
+../tests/test_outputs.py::TestControlLog::test_has_phase_field PASSED    [ 62%]
+../tests/test_outputs.py::TestControlLog::test_has_setpoint_field PASSED [ 65%]
+../tests/test_outputs.py::TestControlLog::test_has_data_array PASSED     [ 67%]
+../tests/test_outputs.py::TestControlLog::test_data_entries_have_required_fields PASSED [ 70%]
+../tests/test_outputs.py::TestControlLog::test_at_least_150_seconds PASSED [ 72%]
+../tests/test_outputs.py::TestControlLog::test_timestamps_monotonic PASSED [ 75%]
+../tests/test_outputs.py::TestMetrics::test_has_required_fields PASSED   [ 77%]
+../tests/test_outputs.py::TestMetrics::test_max_temp_matches_control_log PASSED [ 80%]
+../tests/test_outputs.py::TestMetrics::test_overshoot_matches_control_log PASSED [ 82%]
+../tests/test_outputs.py::TestMetrics::test_steady_state_error_matches_control_log PASSED [ 85%]
+../tests/test_outputs.py::TestPerformance::test_steady_state_error PASSED [ 87%]
+../tests/test_outputs.py::TestPerformance::test_settling_time PASSED     [ 90%]
+../tests/test_outputs.py::TestPerformance::test_overshoot PASSED         [ 92%]
+../tests/test_outputs.py::TestPerformance::test_temperature_below_30 PASSED [ 95%]
+../tests/test_outputs.py::TestSafety::test_calibration_temp_below_30 PASSED [ 97%]
+../tests/test_outputs.py::TestSafety::test_control_temp_below_30 PASSED  [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestFilesExist::test_calibration_log_exists
+PASSED ../tests/test_outputs.py::TestFilesExist::test_estimated_params_exists
+PASSED ../tests/test_outputs.py::TestFilesExist::test_tuned_gains_exists
+PASSED ../tests/test_outputs.py::TestFilesExist::test_control_log_exists
+PASSED ../tests/test_outputs.py::TestFilesExist::test_metrics_exists
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_has_phase_field
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_has_heater_power_test
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_has_data_array
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_data_entries_have_required_fields
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_at_least_20_data_points
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_at_least_30_seconds
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_timestamps_monotonic
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_starts_near_ambient
+PASSED ../tests/test_outputs.py::TestCalibrationLog::test_data_uses_declared_power
+PASSED ../tests/test_outputs.py::TestEstimatedParams::test_has_required_fields
+PASSED ../tests/test_outputs.py::TestEstimatedParams::test_k_within_tolerance
+PASSED ../tests/test_outputs.py::TestEstimatedParams::test_tau_within_tolerance
+PASSED ../tests/test_outputs.py::TestEstimatedParams::test_r_squared_above_threshold
+PASSED ../tests/test_outputs.py::TestEstimatedParams::test_no_nan_values
+PASSED ../tests/test_outputs.py::TestTunedGains::test_has_required_fields
+PASSED ../tests/test_outputs.py::TestTunedGains::test_kp_in_range
+PASSED ../tests/test_outputs.py::TestTunedGains::test_ki_in_range
+PASSED ../tests/test_outputs.py::TestTunedGains::test_kd_non_negative
+PASSED ../tests/test_outputs.py::TestTunedGains::test_lambda_positive
+PASSED ../tests/test_outputs.py::TestControlLog::test_has_phase_field
+PASSED ../tests/test_outputs.py::TestControlLog::test_has_setpoint_field
+PASSED ../tests/test_outputs.py::TestControlLog::test_has_data_array
+PASSED ../tests/test_outputs.py::TestControlLog::test_data_entries_have_required_fields
+PASSED ../tests/test_outputs.py::TestControlLog::test_at_least_150_seconds
+PASSED ../tests/test_outputs.py::TestControlLog::test_timestamps_monotonic
+PASSED ../tests/test_outputs.py::TestMetrics::test_has_required_fields
+PASSED ../tests/test_outputs.py::TestMetrics::test_max_temp_matches_control_log
+PASSED ../tests/test_outputs.py::TestMetrics::test_overshoot_matches_control_log
+PASSED ../tests/test_outputs.py::TestMetrics::test_steady_state_error_matches_control_log
+PASSED ../tests/test_outputs.py::TestPerformance::test_steady_state_error
+PASSED ../tests/test_outputs.py::TestPerformance::test_settling_time
+PASSED ../tests/test_outputs.py::TestPerformance::test_overshoot
+PASSED ../tests/test_outputs.py::TestPerformance::test_temperature_below_30
+PASSED ../tests/test_outputs.py::TestSafety::test_calibration_temp_below_30
+PASSED ../tests/test_outputs.py::TestSafety::test_control_temp_below_30
+============================== 40 passed in 0.21s ==============================
+Pytest exit code: 0
+All tests passed!
+Test run complete. Results in /logs/verifier/
