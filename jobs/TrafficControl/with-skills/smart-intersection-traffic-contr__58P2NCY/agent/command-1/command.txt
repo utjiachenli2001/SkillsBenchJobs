@@ -1,0 +1,23 @@
+codex exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check --model gpt-5.2 --json --enable unified_exec -c model_reasoning_effort=xhigh -- 'You need to implement a smart traffic light controller for a busy 4-way intersection with North-South (NS) and East-West (EW) traffic flows. And the targets are: average wait time <15s, max wait time <90s, emergency response time <5s, zero vehicles starved (waiting >60s), simulation duration 3600s. Also consider the constraints: Only one direction can have green at a time, green lights must last ≥10s, yellow lights 3s, all-red clearance period 2s between direction changes, emergency vehicles receive a green light within 5 seconds of arrival. Data is traffic_data.json.
+
+
+First, Read and analyze the traffic data. Second, implement your traffic light controller(should satisfy the above requirements). Then,generate the light schedule, result in light_schedule.json. Then, create metrics, result in metrics.json. Finally,create an event log. Write all state change events to event_log.json. Each event have a timestamp and describe what happened.
+
+Examples output format:
+light_schedule.json:
+[
+  {"time": 0, "state": {"NS": "green", "EW": "red"}},
+  {"time": 30, "state": {"NS": "yellow", "EW": "red"}},
+  {"time": 33, "state": {"NS": "red", "EW": "red"}},
+  {"time": 35, "state": {"NS": "red", "EW": "green"}}
+]
+
+metrics.json:
+{
+  "total_wait_time": 12500,
+  "max_wait_time": 45,
+  "total_vehicles": 850,
+  "average_wait_time": 14.7,
+  "emergency_response_times": [2.5, 3.1, 4.0],
+  "vehicles_starved": 0
+}' 2>&1 </dev/null | tee /logs/agent/codex.txt && rm -rf $CODEX_HOME/auth.json

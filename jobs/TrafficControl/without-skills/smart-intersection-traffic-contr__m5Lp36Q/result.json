@@ -1,0 +1,87 @@
+{
+    "id": "645a6dcb-0f12-4e75-94cb-2fc0f513d95c",
+    "task_name": "smart-intersection-traffic-controller",
+    "trial_name": "smart-intersection-traffic-contr__m5Lp36Q",
+    "trial_uri": "file:///mnt/f/TrafficControl/jobs/2026-01-18__14-10-52/smart-intersection-traffic-contr__m5Lp36Q",
+    "task_id": {
+        "path": "tasks/smart-intersection-traffic-controller"
+    },
+    "source": null,
+    "task_checksum": "fa7f640813fc3be8a337c80f2d3f6fd3df744a6463e5c5ffd0943a056e971965",
+    "config": {
+        "task": {
+            "path": "tasks/smart-intersection-traffic-controller",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "smart-intersection-traffic-contr__m5Lp36Q",
+        "trials_dir": "jobs/2026-01-18__14-10-52",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "gpt-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "68355fae-d5df-4699-8ab7-be9239f4af8c"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 4880437,
+        "n_cache_tokens": 4825472,
+        "n_output_tokens": 95370,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-18T14:10:52.244202",
+    "finished_at": "2026-01-18T14:40:16.561811",
+    "environment_setup": {
+        "started_at": "2026-01-18T14:10:52.369682",
+        "finished_at": "2026-01-18T14:10:55.236516"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-18T14:10:55.236538",
+        "finished_at": "2026-01-18T14:11:16.847197"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-18T14:11:16.847254",
+        "finished_at": "2026-01-18T14:40:13.078583"
+    },
+    "verifier": {
+        "started_at": "2026-01-18T14:40:13.078767",
+        "finished_at": "2026-01-18T14:40:14.709040"
+    }
+}

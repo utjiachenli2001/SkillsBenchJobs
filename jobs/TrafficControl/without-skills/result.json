@@ -1,0 +1,29 @@
+{
+    "id": "68355fae-d5df-4699-8ab7-be9239f4af8c",
+    "started_at": "2026-01-18T14:10:52.193659",
+    "finished_at": "2026-01-18T14:40:16.571072",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "codex__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "smart-intersection-traffic-contr__m5Lp36Q"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

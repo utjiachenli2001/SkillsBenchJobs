@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.14, pytest-8.0.0, pluggy-1.6.0 -- /usr/local/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.2.1
+collecting ... collected 20 items
+
+../tests/test_outputs.py::TestFileExistence::test_light_schedule_exists PASSED [  5%]
+../tests/test_outputs.py::TestFileExistence::test_metrics_exists PASSED  [ 10%]
+../tests/test_outputs.py::TestFileExistence::test_event_log_exists PASSED [ 15%]
+../tests/test_outputs.py::TestLightScheduleStructure::test_schedule_is_list PASSED [ 20%]
+../tests/test_outputs.py::TestLightScheduleStructure::test_schedule_entries_have_required_fields PASSED [ 25%]
+../tests/test_outputs.py::TestLightScheduleStructure::test_schedule_timestamps_are_sequential PASSED [ 30%]
+../tests/test_outputs.py::TestLightScheduleStructure::test_schedule_covers_full_simulation PASSED [ 35%]
+../tests/test_outputs.py::TestSafetyTimings::test_minimum_green_time PASSED [ 40%]
+../tests/test_outputs.py::TestSafetyTimings::test_yellow_duration PASSED [ 45%]
+../tests/test_outputs.py::TestSafetyTimings::test_all_red_clearance PASSED [ 50%]
+../tests/test_outputs.py::TestSafetyTimings::test_no_conflicting_greens PASSED [ 55%]
+../tests/test_outputs.py::TestMetricsStructure::test_metrics_has_required_fields PASSED [ 60%]
+../tests/test_outputs.py::TestMetricsStructure::test_metrics_values_are_numeric PASSED [ 65%]
+../tests/test_outputs.py::TestMetricsStructure::test_emergency_response_times_is_list PASSED [ 70%]
+../tests/test_outputs.py::TestPerformanceThresholds::test_average_wait_time_under_threshold PASSED [ 75%]
+../tests/test_outputs.py::TestPerformanceThresholds::test_max_wait_time_under_threshold PASSED [ 80%]
+../tests/test_outputs.py::TestPerformanceThresholds::test_no_starved_vehicles PASSED [ 85%]
+../tests/test_outputs.py::TestEmergencyVehicles::test_emergency_response_under_threshold PASSED [ 90%]
+../tests/test_outputs.py::TestEventLogStructure::test_event_log_is_list PASSED [ 95%]
+../tests/test_outputs.py::TestEventLogStructure::test_event_log_entries_have_timestamps PASSED [100%]
+
+============================== 20 passed in 0.02s ==============================
